@@ -35,19 +35,14 @@
 		<div class="container">
 			<div class="header__top">
 				<div class="header__top__left">				
-					<?php //get_template_part('modules/components/site-logo'); ?> <!-- Creo que se usa este -->
-				</div>
-				<div class="header__top__center">
-					<?php //get_template_part('modules/components/search'); ?>
+					<?php get_template_part('modules/components/site-logo'); ?>
 				</div>
 				<div class="header__top__right">
-					<?php //get_template_part('modules/components/account'); ?>
-					<?php //get_template_part('modules/components/cart'); ?>
 					<?php get_template_part('//modules/components/responisve-btn'); ?>
 				</div>
 			</div>
 			<div class="header__bottom" data-block="menu">
-				<?php //get_template_part('modules/components/menu'); ?> <!-- Creo que se usa este -->
+				<?php get_template_part('modules/components/menu'); ?> 
 			</div>
 		</div>
 	</header>

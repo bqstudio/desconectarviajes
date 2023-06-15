@@ -1,6 +1,6 @@
 <div class="grid__item">
     <div class="image-background">
-        <img src="<?php echo get_template_directory_uri();?>/images/examples/playa.jpg">
+        <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>
     </div>
-    <h2 class="grid__title h5">República Dominicana</h2>
+    <?php echo ($title = get_sub_field('title'))? '<h2 class="grid__title h5">'.$title.'</h2>':'';?>
 </div>

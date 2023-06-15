@@ -14,14 +14,6 @@
 						<h3 class="site-footer__title">Column title</h3>
 						<?php get_template_part('modules/components/socials'); ?>
 					</div>
-					<div class="site-footer__column">
-						<h3 class="site-footer__title">Column title</h3>
-						<?php get_template_part('modules/components/socials'); ?>
-					</div>
-					<div class="site-footer__column">
-						<h3 class="site-footer__title">Column title</h3>
-						<?php get_template_part('modules/components/socials'); ?>
-					</div>
 				</div>
 			</div>
 		</div>

@@ -23,14 +23,17 @@
 <section class="hero hero--home">
     <div class="hero__image">
         <div class="image-background">
-            <img src="<?php echo get_template_directory_uri();?>/images/examples/playa.jpg">
+            <?php get_template_part('modules/components/image',NULL,array('image' => get_field('hero_image')) ); ?>
         </div>
     </div>
     <div class="hero__content">
         <div class="hero__data">
-            <h2 class="hero__uppertitle h4">para tus vacaciones</h2>
-            <h1 class="hero__title h1">des conectar viajes!</h1>   
-            <a href="#" class="button button--arrow" tabindex="0">Button Inicio</a>
+            <?php 
+            echo ($upper_title = get_field('upper_title'))? '<h2 class="hero__uppertitle h4">'.$upper_title.'</h2>':'';
+            echo ($title = get_field('title'))? '<h1 class="hero__title h1">'.$title.'</h1>':'';
+            if( $button = get_field('button')): ?>
+                <a class="button button--arrow" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
+            <?php endif; ?>
         </div>
     </div>
 </section>
