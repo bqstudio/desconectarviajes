@@ -1,0 +1,49 @@
+
+
+
+.contact {
+
+    &__title {
+        color: $primary-color;
+        margin-bottom: 20px;
+        font-family: $bad;
+    }
+
+    &__text {
+        margin: 0 auto;
+        width: 1200px;
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        p {
+            letter-spacing: 1px;
+            font-size: 16px;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(2, 50%); 
+        gap: 40px;
+        max-width: 1200px;
+        align-items: center;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+
+        p {
+            font-family: $bad;
+        }
+        
+    }
+
+    &__left {
+        text-align: left;
+    }
+
+    &__form {
+        display: flex;
+        gap: 20px;
+    }
+}

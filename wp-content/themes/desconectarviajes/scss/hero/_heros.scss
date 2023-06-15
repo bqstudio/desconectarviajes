@@ -1,0 +1,101 @@
+.hero {
+    aspect-ratio: 16/9;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+    &__image {
+        @include absolute();
+        z-index: -1;
+
+        &::before, &::after {
+            content: '';
+            @include absolute();
+            z-index: 2;
+        }
+
+        &::before {
+            height: 222px;
+            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0;
+            height: 392px;
+            background: linear-gradient(180deg, rgba(0, 45, 80, 0.0001) 0%, rgba(0, 45, 80, 0.8) 53.44%, #002D50 94.67%);
+        }
+    }
+
+    &__content {
+        width: 960px;
+        max-width: 100%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 50px;
+        padding-bottom: 20px;
+    }
+
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 30px;
+    }
+
+    &__title {
+        color: $secondary-color;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            font-family: $abril;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        text-transform: uppercase;
+        color: $white;
+        font-family: $default-font;
+    }
+
+    .misc {
+        width: 121px;
+        height: 2px;
+        background: $white;
+    }
+
+    &__text {
+        color: $white;
+    }
+
+    .button {
+        //min-width: 289px; TODO: ver si se le da mas ancho en el hero
+    }
+}
+
+.hero--blog, .hero--post {
+    aspect-ratio: 2.49;
+
+    .hero {
+        &__image {
+            &::after {
+                height: 270px;
+            }
+        }
+    }
+}
+
+.hero--home { 
+    justify-content: center;
+
+    .hero {
+        &__image {
+            height: 100vh;
+            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
+        }
+    }
+}
+

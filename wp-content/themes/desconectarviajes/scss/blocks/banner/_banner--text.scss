@@ -1,0 +1,26 @@
+.banner--text {
+	//margin: 0 auto;
+	text-align: center;
+	display: flex;
+
+	.banner {
+
+		&__title {
+			color: var(--btw);
+			margin-bottom: 20px;
+			font-family: $bad;
+		}
+
+		&__text {
+			margin: 0 auto;
+			width: 1200px;
+			max-width: 100%;
+			margin-bottom: 30px;
+
+			p {
+				font-family: $bad;
+				letter-spacing: 1px;
+			}
+		}
+	}
+}

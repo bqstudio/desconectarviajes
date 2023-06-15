@@ -1,0 +1,25 @@
+.block-slider{
+	padding: 100px 0;
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.swiper{
+		&-pagination{ 
+			display: flex;
+			gap: 10px;
+			&-bullet{
+				width: 16px;
+				height: 16px;
+				background: #eee;
+				&-active{
+					background: #333;
+				}
+			}
+		}
+		&-button-prev,
+		&-button-next{
+			cursor: pointer;
+		} 
+	} 
+}

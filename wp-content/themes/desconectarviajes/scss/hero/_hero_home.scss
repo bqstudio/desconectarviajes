@@ -1,0 +1,16 @@
+.hero--home {
+
+    .hero {
+        &__uppertitle {
+            color: $white;
+            font-weight: 500;
+            font-family: $default-font;
+            font-family: $bad;
+            text-transform: uppercase;
+        }
+
+        &__content {
+            padding-bottom: 0;
+        }
+    }
+}
