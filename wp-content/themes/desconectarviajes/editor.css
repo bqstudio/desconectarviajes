@@ -297,9 +297,9 @@ Blocks Styles
 				width: 100%;
 }
 .editor-styles-wrapper .acf-block-preview .container {
-				max-width: 1600px;
+				max-width: 1500px;
 				margin: 0 auto;
-				max-width: 100%;
+				width: 100%;
 				padding: 0 30px;
 }
 @media only screen and (max-width: 750px) {

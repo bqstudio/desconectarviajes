@@ -80,7 +80,7 @@ strong * {
 .container {
   max-width: map-get($site-widths, max-width);
   margin: 0 auto;
-  max-width: 100%;
+  width: 100%;
   padding: 0 30px;
 
   @include responsive ('mobile-h') {
