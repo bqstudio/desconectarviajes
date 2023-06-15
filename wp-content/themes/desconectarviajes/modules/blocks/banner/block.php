@@ -18,15 +18,41 @@
  * @since defaultTheme  1.0
  */
 
- do_action( 'palermo_pre_render_block', $block );
- ?>
+do_action( 'palermo_pre_render_block', $block );
+?>
+
+<?php 
+    $title = get_field('title');
+    $title = ( !empty($title) ) ? $title : '';
+
+    $text = get_field('text');
+    $text = ( !empty($text) ) ? $text : '';
+
+    $button = get_field('button');
+    $button = ( !empty($button) ) ? $button : '';
+?>
+
 <section class="wrapper padding-b">
     <section class="module banner banner--text">
         <div class="container">
-            <h4 class="banner__title h3">Este es un bloque de texto</h4>
-            <div class="banner__text">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu rutrum leo. In a pulvinar lorem, in egestas odio. Mauris sed orci nisl. Nullam tincidunt venenatis odio, et fringilla libero euismod vel. Nulla semper lectus at massa dictum, at sollicitudin enim fermentum. Donec eu aliquam lacus, sed efficitur felis. Ut pretium tortor sit amet magna luctus tristique. Nam iaculis venenatis porttitor. Nullam non lorem porta, consectetur ex sed, maximus massa. Etiam quis est a nisi pharetra ullamcorper. Phasellus vitae pharetra mauris.</p>
-            </div>
+            
+            <!-- //ifempty -->
+            <?php if (!empty($title)) {?>
+                <h4 class="banner__title h3"><?php echo wp_kses_post( $title ); ?></h4>
+            <?php } ?>
+
+            <?php if (!empty($text)) {?>
+                <div class="banner__text">
+                    <p><?php  echo wp_kses_post( $text ); ?></p>
+                </div>
+            <?php } ?>
+
+            <?php if (!empty($button)) {?>
+                <a href="<?php echo esc_attr($button['url']); ?>" class="button button--arrow" tabindex="0" target='<?php echo $button['target']?>'>
+                    <?php echo wp_kses_post ($button['title']); ?>
+                </a>
+            <?php } ?>
+
         </div>
     </section>
 </section>
