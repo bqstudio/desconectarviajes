@@ -32,12 +32,20 @@
                     <h3 class="contact__subtitle h5"><p>razon social: <span>Liliana Liliana</span></p></h3>
                     <h3 class="contact__subtitle h5"><p>cuit: <span>30-12345678-4</span></p></h3>
                     <h3 class="contact__subtitle h5"><p>Vías de comunicación para efectuar reclamos</p></h3>
-                    <h3 class="contact__subtitle h5"><p>Telefono: <a href="+54111234567">+54111234567</a></p></h3>
-                    <a href="https://tramitesadistancia.gob.ar/tramitesadistancia/detalle-tipo?id=624" tabindex="0" class="contact__link">denuncia contra la agencia</a>
-                
+                    <h3 class="contact__subtitle h5">
+                        <p>Telefono: <a href="+54111234567">+54111234567</a></p>
+                    </h3>
+                    <h3 class="contact__subtitle h5">
+                        <p>Email: <a href="mailto:info@desconectarviajes.tur.ar/">info@desconectarviajes.tur.ar</a></p>
+                    </h3>
                 </div>
                 <div class="contact__form">
 
+                </div>
+                <div class="contact__gobar">
+                    <h3 class="contact__subtitle h5">
+                        <p><a href="https://tramitesadistancia.gob.ar/tramitesadistancia/detalle-tipo?id=624" tabindex="0" class="contact__link">denuncia contra la agencia</a></p>
+                    </h3>
                 </div>
             </div>
         </div>

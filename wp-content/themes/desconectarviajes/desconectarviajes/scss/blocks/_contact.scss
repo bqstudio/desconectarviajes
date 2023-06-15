@@ -33,10 +33,17 @@
 
     &__data {
         text-align: left;
-        flex: 40%;
+        flex: 100%;
     }
 
     &__form {
         width: 100%;
+    }
+
+    &__gobar {
+        width: 100%;
+        flex: 100%;
+        text-align: center; 
+        margin: 10px auto;
     }
 }
