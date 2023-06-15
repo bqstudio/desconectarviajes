@@ -1,0 +1,27 @@
+.block-blog_ajax{
+    margin: 100px 0;
+    .filters{
+        margin-bottom: 20px;
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            &.active{
+                background: $secondary-color;
+                color: #fff;
+            }
+        }
+    }
+    .post-item{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+    .blogpagination{
+        display: flex;
+        gap: 10px;
+        a, span{
+            padding: 10px;
+        }
+    }
+} 

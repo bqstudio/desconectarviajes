@@ -1,0 +1,71 @@
+.banner--textimage {
+	//margin: 0 auto;
+	text-align: center;
+	display: flex;
+
+	.banner {
+
+		&__title {
+			color: var(--btw);
+			margin-bottom: 20px;
+			font-family: $bad;
+		}
+
+		&__text {
+			margin: 0 auto;
+			width: 1200px;
+			max-width: 100%;
+			margin-bottom: 30px;
+
+			p {
+				letter-spacing: 1px;
+				font-size: 16px;
+			}
+		}
+
+		&__content {
+			display: grid;
+			grid-template-columns: repeat(2, 50%);
+			gap: 40px;
+			max-width: 1200px;
+			align-items: center;
+		}
+
+		&__subtitle {
+			margin-bottom: 20px;
+
+			p {
+				font-family: $bad;
+			}
+			
+		}
+
+		&__description {
+			font-family: $bad;
+			margin-bottom: 20px;
+		}
+
+		&__left {
+			text-align: left;
+		}
+
+		&__right {
+			display: flex;
+			gap: 20px;
+		}
+
+		&__perfil {
+			position: relative;
+			display: flex;
+			flex: 0 0 50%;
+			max-width: 50%;
+			min-height: 400px;
+			border-radius: 0px 50px 0px 50px;
+			overflow: hidden;
+		}
+	}
+}
+
+.bg-color {
+	background-color: #FFFAF0;
+}

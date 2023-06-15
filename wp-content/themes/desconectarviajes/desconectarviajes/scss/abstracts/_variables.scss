@@ -1,0 +1,96 @@
+
+/// @type List
+$default-font: 'Montserrat', sans-serif !default;
+$secondary-font: 'Montserrat', sans-serif !default;
+$abril: 'Abril Fatface', cursive, sans-serif !default;
+$bad: 'Bad Script', cursive, sans-serif !default;
+$roboto: 'Roboto Mono', monospace !default;
+
+/* font-family: 'Abril Fatface', cursive;
+font-family: 'Bad Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Mono', monospace; */
+
+/// @type Color
+$primary-color: #000 !default;
+$secondary-color: #FFD200 !default;
+$third-color: #333F44 !default;
+$white: #ffffff !default;
+$grey: #dddddd !default;
+$black: #000 !default;
+
+/// @type Length
+$site-widths: (
+  'full-width': 100%,
+  'max-width': 1600px,
+) !default;
+
+$font-sizes: (
+  'h1': 90px,
+  'h2': 70px,
+  'h3': 36px,
+  'h4': 26px,
+  'h5': 18px,
+  'h6': 16px,
+  'h7': 12px,
+) !default;
+
+$font-sizes-tablet: (
+  'h1': 70px,s
+  'h2': 70px,
+  'h3': 28px,
+  'h4': 24px,
+  'h5': 16px,
+  'h6': 16px,
+  'h7': 12px,
+) !default;
+
+$font-sizes-mobile: (
+  'h1': 70px,
+  'h2': 40px,
+  'h3': 28px,
+  'h4': 24px,
+  'h5': 16px,
+  'h6': 16px,
+  'h7': 12px,
+  ) !default;
+
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'demi': 600,
+  'bold': 700,
+) !default;
+
+$separator: (
+  'big': 100px,
+  'short': 40px,
+) !default;
+
+$separator-tablet: (
+  'big': 100px,
+  'short': 40px,
+) !default;
+
+$separator-mobile: (
+  'big': 100px,
+  'short': 40px,
+  ) !default;
+
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+'mobile-s': 400px,
+'mobile-v': 600px,
+'mobile-h': 750px,
+'tablet-v': 900px,
+'tablet-h': 1050px,
+'desktop-s': 1200px,
+'desktop': 1440px,
+) !default;
+
+$transition-default: all 1s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$transition-default-delay: .2s;

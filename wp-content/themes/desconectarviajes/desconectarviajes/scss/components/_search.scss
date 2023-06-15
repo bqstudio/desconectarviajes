@@ -1,0 +1,51 @@
+.site-search {
+    position: relative;
+    width: 100%;
+
+    .wc-block-product-search .wc-block-product-search__fields {
+      flex-direction: row-reverse;
+    }
+
+    form {
+      label {
+        display: none;
+      }
+
+      input[type=search] {
+        width: calc(100% - 25px);
+        height: 25px;
+        line-height: 25px;
+        padding: 0 8px;
+        @include h7();
+        color: $primary-color;
+
+        &::placeholder {
+          color: $primary-color;
+        }
+      }
+
+      button {
+        width: 25px;
+        height: 25px;
+        background: none;
+        text-indent: 500px;
+        overflow: hidden;
+        cursor: pointer;
+        background-image: url(images/search.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        margin: 0;
+
+        svg {
+          display: none;
+        }
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      z-index: -1;
+    }
+}
