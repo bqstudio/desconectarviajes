@@ -10,9 +10,8 @@
 						<?php get_template_part('modules/components/site-logo'); ?>
 						<?php get_template_part('modules/components/copyright'); ?>
 					</div>
-					<div class="site-footer__column">
-						<h3 class="site-footer__title">Column title</h3>
-						<?php get_template_part('modules/components/socials'); ?>
+					<div class="site-footer__bq">
+						By <a href="https://bq-studio.com/" target="_blank" tabindex="0">BQ-Studio</a>
 					</div>
 				</div>
 			</div>

@@ -27,6 +27,13 @@
             <div class="contact__text">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu rutrum leo. In a pulvinar lorem, in egestas odio. Mauris sed orci nisl.</p>
             </div>
+            <?php if ($form_id = get_field('form_id')): ?> 
+                <div class="form_block">
+                    <div class="formBox" >
+                        <?php echo do_shortcode('[gravityform id="'.$form_id.'" title="false" description="false" ajax="true"]'); ?>
+                    </div>
+                </div>
+                <?php endif; ?>
             <div class="contact__content">
                 <div class="contact__data">
                     <h3 class="contact__subtitle h5"><p>razon social: <span>Liliana Liliana</span></p></h3>
