@@ -24,7 +24,7 @@
     <section class="module banner banner--textimage" id="nosotras">
         <div class="container">
             <?php echo ($title = get_field('title'))? '<h2 class="banner__title h3 ">'.$title.'</h2>':'';
-             echo ($text = get_field('text'))? '<div class="banner__text">'.$text.'</div>':''; ?>
+            echo ($text = get_field('text'))? '<div class="banner__text">'.$text.'</div>':''; ?>
 
             <div class="banner__content">
                 <div class="banner__left">
@@ -35,11 +35,13 @@
                         <div class="image-background">
                             <?php get_template_part('modules/components/image',NULL,array('image' => get_field('photo_perfil_1')) ); ?>
                         </div>
+                        <h3 class="banner__name h5">Nombre</h3> <!-- TODO: Dinamizar -->
                     </div>
                     <div class="banner__perfil">
                         <div class="image-background">
                             <?php get_template_part('modules/components/image',NULL,array('image' => get_field('photo_perfil_2')) ); ?>
                         </div>
+                        <h3 class="banner__name h5">Nombre</h3> <!-- TODO: Dinamizar -->
                     </div>
                 </div>
             </div>

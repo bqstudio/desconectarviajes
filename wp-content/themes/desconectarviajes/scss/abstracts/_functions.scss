@@ -43,7 +43,7 @@
 @mixin h1 {
   font-size: map-get($font-sizes, h1);
   font-family: $secondary-font;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 0.80;
 
   @include responsive('tablet-h') {
@@ -58,7 +58,7 @@
 @mixin h2 {
   font-size: map-get($font-sizes, h2);
   font-family: $secondary-font;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 0.86;
 
   @include responsive('tablet-h') {
@@ -73,7 +73,7 @@
 @mixin h3 {
   font-size: map-get($font-sizes, h3);
   font-family: $secondary-font;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 0.90;
 
   @include responsive('tablet-h') {

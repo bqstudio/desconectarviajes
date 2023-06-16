@@ -31,16 +31,23 @@
 
 		&__subtitle {
 			margin-bottom: 20px;
-
-			p {
-				font-family: $bad;
-			}
-			
 		}
 
 		&__description {
 			font-family: $bad;
 			margin-bottom: 20px;
+
+			h1,h2,h3,h4 {
+				@include h4();
+				margin-bottom: 30px;
+				font-family: $bad;
+				font-weight: 700;
+			}
+
+			p {
+				letter-spacing: 1px;
+			}
+
 		}
 
 		&__left {
@@ -62,6 +69,18 @@
 			min-height: 400px;
 			border-radius: 0px 50px 0px 50px;
 			overflow: hidden;
+		}
+
+		&__name {
+			position: absolute;
+			bottom: 20px;
+			right: 0;
+			padding: 20px 0;
+			background-color: $white;
+			text-align: center;
+			width: 85%;
+			opacity: 0.90;
+			border-radius: 0 0px 0px 50px;
 		}
 	}
 }

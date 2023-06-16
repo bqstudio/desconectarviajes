@@ -52,7 +52,7 @@ body.login #login input[type=text]:focus, body.login #login input[type=password]
 				outline: none;
 }
 body.login #backtoblog {
-				display: none !important;
+				display: none;
 }
 body.login #wp-submit {
 				background: #BC0A65;

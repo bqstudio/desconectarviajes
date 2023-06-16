@@ -156,8 +156,6 @@ strong * {
 
 
 .wrapper {
-  background-color: $third-color; //TODO: Eliminar cualquier cosa
-
   color: $primary-color;
 
   &.padding-b {
@@ -188,6 +186,10 @@ strong * {
       padding-top: map-get($separator-mobile, short);
       padding-bottom: map-get($separator-mobile, short);
     }
+  }
+
+  &--blue {
+    background-color: $third-color;
   }
 }
 
