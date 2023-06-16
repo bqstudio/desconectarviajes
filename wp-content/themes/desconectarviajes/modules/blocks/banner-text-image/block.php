@@ -35,13 +35,13 @@
                         <div class="image-background">
                             <?php get_template_part('modules/components/image',NULL,array('image' => get_field('photo_perfil_1')) ); ?>
                         </div>
-                        <h3 class="banner__name h5">Nombre</h3> <!-- TODO: Dinamizar -->
+                        <h3 class="banner__name h5">Liliana Haberkorn</h3> <!-- TODO: Dinamizar -->
                     </div>
                     <div class="banner__perfil">
                         <div class="image-background">
                             <?php get_template_part('modules/components/image',NULL,array('image' => get_field('photo_perfil_2')) ); ?>
                         </div>
-                        <h3 class="banner__name h5">Nombre</h3> <!-- TODO: Dinamizar -->
+                        <h3 class="banner__name h5">Marianela Figliomeni</h3> <!-- TODO: Dinamizar -->
                     </div>
                 </div>
             </div>
