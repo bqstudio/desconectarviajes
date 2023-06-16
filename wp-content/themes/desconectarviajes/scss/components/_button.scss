@@ -21,8 +21,10 @@
 
 
   &:hover {
-    background-color: var(--btw);
+    background-color: transparent;
+    color: $blue-pallette;
     color: #002D50;
+    border: 2px solid $blue-pallette; 
     border: 2px solid #002D50; 
   }
 

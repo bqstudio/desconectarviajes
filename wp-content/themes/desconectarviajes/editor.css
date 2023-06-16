@@ -324,7 +324,7 @@ Blocks Styles
 				width: 100%;
 }
 .editor-styles-wrapper .acf-block-preview .container {
-				max-width: 1920px;
+				max-width: 1500px;
 				margin: 0 auto;
 				width: 100%;
 				padding: 0 60px;
@@ -498,7 +498,8 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .site-menu__item--text {
-				color: #fff;
+				color: #ffffff;
+				text-decoration: none;
 }
 .editor-styles-wrapper .acf-block-preview .scrolled header .site-menu__item--text {
 				color: #74B5B0;
@@ -691,8 +692,10 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .woocommerce a.button:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce button.button:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce input.button:hover {
-				background-color: var(--btw);
+				background-color: transparent;
+				color: #49769F;
 				color: #002D50;
+				border: 2px solid #49769F;
 				border: 2px solid #002D50;
 }
 .editor-styles-wrapper .acf-block-preview .button--arrow,
@@ -2025,7 +2028,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__uppertitle {
 				color: #ffffff;
-				font-weight: 500;
+				font-weight: 700;
 				font-family: "Montserrat", sans-serif;
 				font-family: "Bad Script", cursive, sans-serif;
 				text-transform: uppercase;
@@ -3741,7 +3744,6 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__text {
 				margin: 0 auto;
-				width: 1200px;
 				max-width: 100%;
 				margin-bottom: 40px;
 }
@@ -3757,7 +3759,6 @@ Blocks Styles
 				grid-gap: 20px;
 				justify-items: center;
 				margin: 0 auto;
-				width: 1200px;
 				max-width: 100%;
 }
 @media only screen and (max-width: 1050px) {
@@ -3817,13 +3818,14 @@ Blocks Styles
 				        justify-content: center;
 				position: relative;
 				width: 100%;
-				min-height: 250px;
+				min-height: 300px;
 				overflow: hidden;
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item {
 								-ms-grid-column: 1;
 								grid-column: 1/1;
+								width: 100%;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__item::before {
@@ -3844,6 +3846,7 @@ Blocks Styles
 				text-transform: uppercase;
 				color: #ffffff;
 				z-index: 3;
+				text-align: center;
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__title::after {
 				content: "";
@@ -3968,3 +3971,4 @@ Blocks Styles
 .block-editor-block-list__layout .block-editor-block-list__block {
 				max-width: 100%;
 }
+/*# sourceMappingURL=editor.css.map */

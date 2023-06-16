@@ -10,7 +10,7 @@
 
         &__text {
             margin: 0 auto;
-            width: 1200px;
+            //width: 1200px;
             max-width: 100%;
             margin-bottom: 40px;
 
@@ -26,7 +26,6 @@
             grid-gap: 20px;
             justify-items: center;
             margin: 0 auto;
-            width: 1200px;
             max-width: 100%;
 
             @include responsive ('tablet-h') {
@@ -104,11 +103,12 @@
             justify-content: center;
             position: relative;
             width: 100%;
-            min-height: 250px;
+            min-height: 300px;
             overflow: hidden;
 
-            @include responsive ('mobile-h') {
+            @include responsive ('tablet-h') {
                 grid-column: 1/1;
+                width: 100%;
             }
 
             &::before {
@@ -126,6 +126,7 @@
             text-transform: uppercase;
             color: $white;
             z-index: 3;
+            text-align: center;
 
             &::after {
                 content: '';

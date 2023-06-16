@@ -32,7 +32,8 @@
     }
 
     &--text {
-      color: #fff;
+      color: $white;
+      text-decoration: none;
     }
   }
 }
