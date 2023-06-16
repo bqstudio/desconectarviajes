@@ -5,72 +5,48 @@ Text Domain: twentysixteen
 */
 
 // Configuration and helpers
-@import
-  'abstracts/_variables',
-  'abstracts/_functions',
-  'abstracts/_mixins';
+@import 'abstracts/_variables',
+'abstracts/_functions',
+'abstracts/_mixins';
 
 // Base stuff
-@import
-  'base/_typography',
-  'base/_base';
+@import 'base/_typography',
+'base/_base';
 
 // Components
-@import
-  'components/_site-logo',
-  'components/_menu',
-  'components/_search',
-  'components/_socials',
-  'components/_button',
-  'components/_forms',
-  'components/_posts',
-  'components/_animations',
-  'components/_breadcrumb';
+@import 'components/_site-logo',
+'components/_menu',
+'components/_search',
+'components/_socials',
+'components/_button',
+'components/_forms',
+'components/_posts',
+'components/_animations',
+'components/_breadcrumb';
 
 // Hero
-@import
-  'hero/_simple',
-  'hero/_heros',
-  'hero/_hero_home';
+@import 'hero/_simple',
+'hero/_heros',
+'hero/_hero_home';
 
 // Layout 
-@import
-  'layout/_header',
-  'layout/_footer';
+@import 'layout/_header',
+'layout/_footer';
 
 // Vendor
-@import 
-'vendors/_fontawesome_brands',
-'vendors/_fancybox', 
+@import 'vendors/_fontawesome_brands',
+'vendors/_fancybox',
 'vendors/_swiper'
 ;
 
 
 // Blocks
-@import
-  'blocks/_videos',
-  'blocks/_text_block',
-  'blocks/_buttons',
-  'blocks/_faqs',
-  'blocks/_animation',
-  'blocks/_blog_ajax',
-  'blocks/contact', 
-  'blocks/_slider',
-  'blocks/grid/_grid--banner',
-  'blocks/banner/_banner--text', 
-  'blocks/banner/_banner--textimage';
-
-
-  /* 
-// Woocommerce
-@import
-  'woocommerce/_header_cart',
-  'woocommerce/_header_account',
-  'woocommerce/_rating_stars',
-  'woocommerce/_item',
-  'woocommerce/_archive',
-  'woocommerce/_single',
-  'woocommerce/_cart',
-  'woocommerce/_checkout',
-  'woocommerce/_account';
-*/
+@import 'blocks/_videos',
+'blocks/_text_block',
+'blocks/_buttons',
+'blocks/_animation',
+'blocks/contact',
+'blocks/_slider',
+'blocks/grid/_grid--banner',
+'blocks/banner/_banner--text',
+'blocks/banner/_banner--textimage';

@@ -1,17 +1,22 @@
 jQuery.noConflict();
-jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 
-	$('a[href^="#"]').on('click', function(e){
+	$('a[href^="#"]').on('click', function (e) {
 		e.preventDefault();
 		const el = $($(this).attr('href'));
-	    el.length && $('html, body').animate({ scrollTop: el.offset().top - 90}, 500);
+		el.length && $('html, body').animate({ scrollTop: el.offset().top - 90 }, 500);
+		$('.responsive__btn').trigger('click');
 		return false;
 	});
 
-	$(".js-go-top").on('click', function() {
+	$(".js-go-top").on('click', function () {
 		$([document.documentElement, document.body]).animate({
 			scrollTop: ($("body").offset().top)
 		}, 400);
+	});
+
+	$(window).scroll(function () {
+		$(window).scrollTop() >= 5 ? $('body').addClass('scrolled') : $('body').removeClass('scrolled');
 	});
 
 });

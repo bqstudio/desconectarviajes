@@ -21,7 +21,7 @@
  do_action( 'palermo_pre_render_block', $block );
  ?>
 <section class="wrapper padding-b">
-    <div class="module grid grid--banner">
+    <div class="module grid grid--banner" id="destinos">
         <div class="container">
             <?php echo ($title = get_field('title'))? '<h4 class="grid__title__heading h3">'.$title.'</h4>':''; ?>
             <?php echo ($description = get_field('description'))? '<p class="grid__text">'.$description.'</p>':''; ?>

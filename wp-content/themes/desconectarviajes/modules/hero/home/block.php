@@ -21,11 +21,22 @@
  do_action( 'palermo_pre_render_block', $block );
  ?>
 <section class="hero hero--home">
-    <div class="hero__image">
-        <div class="image-background">
-            <?php get_template_part('modules/components/image',NULL,array('image' => get_field('hero_image')) ); ?>
+    <?php $media_type = get_field('media_type');?>
+    <?php if ($media_type == ('video_file') && $video_file = get_field('video_file')): ?>
+        <div class="hero-home__video">
+            <div class="image-background">
+                <video playsinline autoplay muted loop>
+                    <source src="<?php echo $video_file; ?>#t=0.1" type="video/mp4">
+                </video>
+            </div>
         </div>
-    </div>
+    <?php elseif($hero_image = get_field('hero_image')): ?>
+        <div class="home__image">
+            <div class="image-background">
+                <?php get_template_part('modules/components/image',NULL,array('image' => get_field('hero_image')) ); ?>
+            </div>
+        </div>
+    <?php endif; ?>
     <div class="hero__content">
         <div class="hero__data">
             <?php 

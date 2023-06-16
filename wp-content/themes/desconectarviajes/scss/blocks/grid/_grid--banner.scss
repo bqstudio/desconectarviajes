@@ -4,21 +4,21 @@
         &__title__heading {
             margin-bottom: 20px;
             text-align: center;
-            color: $primary-color;
+            color: $brown;
             font-family: $abril;
         }
 
         &__text {
-			margin: 0 auto;
-			width: 1200px;
-			max-width: 100%;
-			margin-bottom: 40px;
+            margin: 0 auto;
+            width: 1200px;
+            max-width: 100%;
+            margin-bottom: 40px;
 
-			p {
-				letter-spacing: 0.5px;
+            p {
+                letter-spacing: 0.5px;
                 text-align: center;
-			}
-		}
+            }
+        }
 
         &__content {
             display: grid;
@@ -38,42 +38,60 @@
             }
 
             &.n-item-1 {
-                .grid__item {grid-column: span 4;}
+                .grid__item {
+                    grid-column: span 4;
+                }
             }
 
-            &.n-item-2, 
+            &.n-item-2,
             &.n-item-6,
             &.n-item-10 {
                 .grid__item {
-                    &:nth-child(1), 
-                    &:nth-child(2) {grid-column: span 2;}
+
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        grid-column: span 2;
+                    }
                 }
             }
 
             &.n-item-3 {
                 .grid__item {
-                    &:nth-child(1) {grid-column: span 4;} 
-                    &:nth-child(2), &:nth-child(3) {grid-column: span 2;}
+                    &:nth-child(1) {
+                        grid-column: span 4;
+                    }
+
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        grid-column: span 2;
+                    }
                 }
             }
 
             &.n-item-5 {
                 .grid__item {
-                    &:nth-child(1), 
-                    &:nth-child(2), 
-                    &:nth-child(3) {grid-column: span 2;}
+
+                    &:nth-child(1),
+                    &:nth-child(2),
+                    &:nth-child(3) {
+                        grid-column: span 2;
+                    }
                 }
             }
 
             &.n-item-7 {
                 .grid__item {
-                    &:nth-child(1) {grid-column: span 2;}
+                    &:nth-child(1) {
+                        grid-column: span 2;
+                    }
                 }
             }
 
             &.n-item-9 {
                 .grid__item {
-                    &:nth-child(1) {grid-column: span 4;}
+                    &:nth-child(1) {
+                        grid-column: span 4;
+                    }
                 }
             }
         }
@@ -97,7 +115,7 @@
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to bottom, rgba(0,134,255,0) 5%,rgb(14 77 142) 100%);
+                background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 5%, rgb(14 77 142) 100%);
                 @include absolute();
                 z-index: 2;
             }
@@ -114,13 +132,13 @@
                 border-top: 2px solid #FFD200;
                 width: 60px;
                 max-width: 100%;
-                margin: 0  auto;
+                margin: 0 auto;
                 display: block;
                 margin-top: 10px;
             }
         }
     }
-    
+
     .floating-link {
         @include absolute();
         z-index: 2;

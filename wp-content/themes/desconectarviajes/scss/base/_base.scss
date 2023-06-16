@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  
+
   @include default-font();
   font-size: 18px;
   color: $primary-color;
@@ -42,26 +42,69 @@ body {
   }
 }
 
-section { @include row();}
-
-.hidden { display: none; }
-
-input[type="text"],input[type="email"],input[type="search"], input[type="submit"], textarea, button {
-  @include default-font();
-  -webkit-appearance:none;
-  border-radius:0;
+section {
+  @include row();
 }
 
-select {  @include default-font();}
+.hidden {
+  display: none;
+}
 
-h1,.h1,.h1 p {@include h1;}
-h2,.h2,.h2 p {@include h2;}
-h3,.h3,.h3 p {@include h3;}
-h4,.h4,.h4 p {@include h4;}
-h5,.h5,.h5 p {@include h5;}
-h6,.h6,.h6 p {@include h6;}
+input[type="text"],
+input[type="email"],
+input[type="search"],
+input[type="submit"],
+textarea,
+button {
+  @include default-font();
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 
-a {color: $secondary-color; transition: all 0.3s ease;}
+select {
+  @include default-font();
+}
+
+h1,
+.h1,
+.h1 p {
+  @include h1;
+}
+
+h2,
+.h2,
+.h2 p {
+  @include h2;
+}
+
+h3,
+.h3,
+.h3 p {
+  @include h3;
+}
+
+h4,
+.h4,
+.h4 p {
+  @include h4;
+}
+
+h5,
+.h5,
+.h5 p {
+  @include h5;
+}
+
+h6,
+.h6,
+.h6 p {
+  @include h6;
+}
+
+a {
+  color: $secondary-color;
+  transition: all 0.3s ease;
+}
 
 b,
 strong,
@@ -70,7 +113,7 @@ strong * {
 }
 
 :hover {
- transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .row {
@@ -81,7 +124,7 @@ strong * {
   max-width: map-get($site-widths, max-width);
   margin: 0 auto;
   width: 100%;
-  padding: 0 30px;
+  padding: 0 60px;
 
   @include responsive ('mobile-h') {
     padding: 0 15px;
@@ -89,13 +132,13 @@ strong * {
 }
 
 .centerDiv {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center;
-    align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
 }
 
 .iframe-wrapper {
@@ -113,20 +156,20 @@ strong * {
 
 
 .wrapper {
-    background-color: $grey;//TODO: Eliminar cualquier cosa
+  background-color: $third-color; //TODO: Eliminar cualquier cosa
 
-    color: $primary-color;
+  color: $primary-color;
 
   &.padding-b {
     padding-top: map-get($separator, big);
     padding-bottom: map-get($separator, big);
 
-    @include responsive('tablet-h'){
+    @include responsive('tablet-h') {
       padding-top: map-get($separator-tablet, big);
       padding-bottom: map-get($separator-tablet, big);
     }
 
-    @include responsive('mobile-v'){
+    @include responsive('mobile-v') {
       padding-top: map-get($separator-mobile, big);
       padding-bottom: map-get($separator-mobile, big);
     }
@@ -136,37 +179,37 @@ strong * {
     padding-top: map-get($separator, short);
     padding-bottom: map-get($separator, short);
 
-    @include responsive('tablet-h'){
+    @include responsive('tablet-h') {
       padding-top: map-get($separator-tablet, short);
       padding-bottom: map-get($separator-tablet, short);
     }
 
-    @include responsive('mobile-v'){
+    @include responsive('mobile-v') {
       padding-top: map-get($separator-mobile, short);
       padding-bottom: map-get($separator-mobile, short);
     }
   }
 }
 
-.module { 
-    margin-top: map-get($separator, short);
+.module {
+  margin-top: map-get($separator, short);
 
-    @include responsive('tablet-h'){
-      margin-top: map-get($separator-tablet, short);
-    }
+  @include responsive('tablet-h') {
+    margin-top: map-get($separator-tablet, short);
+  }
 
-    @include responsive('mobile-v'){
-      margin-top: map-get($separator-mobile, short);
-    }
+  @include responsive('mobile-v') {
+    margin-top: map-get($separator-mobile, short);
+  }
 
   &.margin-b {
     margin-top: map-get($separator, big);
 
-    @include responsive('tablet-h'){
+    @include responsive('tablet-h') {
       margin-top: map-get($separator-tablet, big);
     }
 
-    @include responsive('mobile-v'){
+    @include responsive('mobile-v') {
       margin-top: map-get($separator-mobile, big);
     }
   }
@@ -180,6 +223,23 @@ strong * {
   .container {
     *:nth-last-child(1) {
       margin-bottom: 0;
-    } 
+    }
   }
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: #25d366;
+  text-align: center;
+  display: inline-block;
+  line-height: 50px;
+  color: #fff;
+  font-size: 30px;
+  box-shadow: #333 0 0 10px;
+  z-index: 1000;
 }

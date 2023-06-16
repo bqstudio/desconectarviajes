@@ -21,7 +21,7 @@
  do_action( 'palermo_pre_render_block', $block );
  ?>
 <section class="wrapper padding-b bg-color">
-    <section class="module banner banner--textimage">
+    <section class="module banner banner--textimage" id="nosotras">
         <div class="container">
             <?php echo ($title = get_field('title'))? '<h2 class="banner__title h3 ">'.$title.'</h2>':'';
              echo ($text = get_field('text'))? '<div class="banner__text">'.$text.'</div>':''; ?>

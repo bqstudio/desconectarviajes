@@ -1,12 +1,21 @@
 .site-footer {
   @include row();
+  background-color: $brown;
 
-   &__cont {
-    padding: 30px 0;
+  &__cont {
+    padding: 15px 0;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .copyright {
     @include h7();
     color: $primary-color;
+    text-align: center;
+    width: 100%;
   }
 }

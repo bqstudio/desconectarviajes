@@ -78,7 +78,6 @@ function _validate_save_post() {
 require get_template_directory() . '/inc/admin.php';
 require get_template_directory() . '/inc/theme.php';
 require get_template_directory() . '/inc/acf.php';
-require get_template_directory() . '/inc/posttypes.php';
 require get_template_directory() . '/inc/blocks.php';
 //require get_template_directory() . '/inc/woocommerce.php';
 

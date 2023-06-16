@@ -36,14 +36,15 @@
 			<div class="header__top">
 				<div class="header__top__left">				
 					<?php get_template_part('modules/components/site-logo'); ?>
+					<div class="header__bottom" data-block="menu">
+						<?php get_template_part('modules/components/menu'); ?> 
+					</div>
 				</div>
 				<div class="header__top__right">
 					<?php get_template_part('//modules/components/responisve-btn'); ?>
 				</div>
 			</div>
-			<div class="header__bottom" data-block="menu">
-				<?php get_template_part('modules/components/menu'); ?> 
-			</div>
+			
 		</div>
 	</header>
 

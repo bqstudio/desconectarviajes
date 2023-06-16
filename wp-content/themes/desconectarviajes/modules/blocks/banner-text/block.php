@@ -33,7 +33,7 @@ do_action( 'palermo_pre_render_block', $block );
 ?>
 
 <section class="wrapper padding-b">
-    <section class="module banner banner--text">
+    <section class="module banner banner--text" id="mision">
         <div class="container">
             
             <!-- //ifempty -->
