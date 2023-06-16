@@ -38,7 +38,7 @@
                 <div class="contact__data">
                     <h3 class="contact__subtitle h5"><p>razon social: <span>Liliana Liliana</span></p></h3>
                     <h3 class="contact__subtitle h5"><p>cuit: <span>30-12345678-4</span></p></h3>
-                    <h3 class="contact__subtitle h5"><p>Vías de comunicación para efectuar reclamos</p></h3>
+                    <h3 class="contact__subtitle h5"><p>Vías de comunicación para efectuar reclamos:</p></h3>
                     <h3 class="contact__subtitle h5">
                         <p>Telefono: <a href="+54111234567">+54111234567</a></p>
                     </h3>

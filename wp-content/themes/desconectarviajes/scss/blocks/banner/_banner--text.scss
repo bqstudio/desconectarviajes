@@ -6,14 +6,13 @@
 	.banner {
 
 		&__title {
-			color: var(--btw);
+			color: $primary-color;
 			margin-bottom: 20px;
 			font-family: $bad;
 		}
 
 		&__text {
 			margin: 0 auto;
-			width: 1200px;
 			max-width: 100%;
 			margin-bottom: 30px;
 

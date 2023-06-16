@@ -23,8 +23,8 @@
 
     &__content {
         display: flex;
-        max-width: 1200px;
         align-items: center;
+        flex-flow: row wrap;
     }
 
     &__subtitle {
@@ -38,10 +38,10 @@
 
     &__data {
         text-align: left;
-        flex: 40%;
+        flex: 100%;
     }
 
     &__form {
-        width: 100%;
+        width: 100%; 
     }
 }

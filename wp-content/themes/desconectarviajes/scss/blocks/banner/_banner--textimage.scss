@@ -6,14 +6,13 @@
 	.banner {
 
 		&__title {
-			color: var(--btw);
+			color: $primary-color;
 			margin-bottom: 20px;
 			font-family: $bad;
 		}
 
 		&__text {
 			margin: 0 auto;
-			width: 1200px;
 			max-width: 100%;
 			margin-bottom: 30px;
 
@@ -24,10 +23,9 @@
 		}
 
 		&__content {
-			display: grid;
-			grid-template-columns: repeat(2, 50%);
+			display: flex;
+			flex-flow: row wrap;
 			gap: 40px;
-			max-width: 1200px;
 			align-items: center;
 		}
 
@@ -47,17 +45,19 @@
 
 		&__left {
 			text-align: left;
+			flex: 700;
 		}
 
 		&__right {
 			display: flex;
 			gap: 20px;
+			flex: 700;
 		}
 
 		&__perfil {
 			position: relative;
 			display: flex;
-			flex: 0 0 50%;
+			flex: 0 1 50%;
 			max-width: 50%;
 			min-height: 400px;
 			border-radius: 0px 50px 0px 50px;
@@ -67,5 +67,5 @@
 }
 
 .bg-color {
-	background-color: #FFFAF0;
+	background-color: #FFFAF0; 
 }
