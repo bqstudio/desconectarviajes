@@ -2275,7 +2275,6 @@ Blocks Styles
 				        justify-content: center;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__image {
-				height: 100vh;
 				background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.0001)));
 				background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
 }
@@ -2432,41 +2431,6 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .site-footer__cont {
 				padding: 30px 0;
-}
-.editor-styles-wrapper .acf-block-preview .site-footer__container {
-				display: -ms-grid;
-				display: grid;
-				-ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
-				grid-template-columns: repeat(4, 1fr);
-				grid-gap: 40px;
-}
-@media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .site-footer__container {
-								-ms-grid-columns: 1fr;
-								grid-template-columns: repeat(1, 1fr);
-								margin: 0 auto;
-								width: 768px;
-								max-width: 100%;
-				}
-}
-.editor-styles-wrapper .acf-block-preview .site-footer__column {
-				position: relative;
-}
-.editor-styles-wrapper .acf-block-preview .site-footer__title {
-				font-size: 12px;
-				font-family: "Montserrat", sans-serif;
-				color: #000;
-				margin-bottom: 20px;
-}
-@media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .site-footer__title {
-								font-size: 12px;
-				}
-}
-@media only screen and (max-width: 600px) {
-				.editor-styles-wrapper .acf-block-preview .site-footer__title {
-								font-size: 12px;
-				}
 }
 .editor-styles-wrapper .acf-block-preview .site-footer .copyright {
 				font-size: 12px;
