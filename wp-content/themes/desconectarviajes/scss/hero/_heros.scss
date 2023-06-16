@@ -5,6 +5,7 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+    height: 100vh;
 
     &__image {
         @include absolute();
