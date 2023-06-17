@@ -19,8 +19,22 @@ jQuery(document).ready(function ($) {
 		$(window).scrollTop() >= 5 ? $('body').addClass('scrolled') : $('body').removeClass('scrolled');
 	});
 
-	$('.responsive__btn').on('click', () => $('body').toggleClass('menu-responsive-open'));
-	$('.js-open-block').click(function () {
-		$('.site-menu').fadeToggle();
+	$(window).on('resize', function () {
+		if ($(window).width() < 1050) {
+			$('.responsive__btn').click(function () {
+				$('body').toggleClass('menu-responsive-open');
+				$('.site-menu').fadeToggle();
+			});
+		} else {
+			// Eliminar los eventos y restablecer el estado original del menú
+			$('.responsive__btn').off('click');
+			$('.js-open-block').off('click');
+			$('.site-menu').fadeIn();
+			$('body').removeClass('menu-responsive-open');
+		}
 	});
+
+	// Ejecutar la verificación inicial al cargar la página
+	$(window).trigger('resize');
+
 });
