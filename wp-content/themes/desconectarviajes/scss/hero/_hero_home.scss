@@ -7,6 +7,7 @@
             font-family: $default-font;
             font-family: $bad;
             text-transform: uppercase;
+            @include fade(0,100px,true,1)
         }
 
         &__content {
