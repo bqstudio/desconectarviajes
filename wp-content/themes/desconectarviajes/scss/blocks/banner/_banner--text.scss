@@ -9,12 +9,14 @@
 			color: $primary-color;
 			margin-bottom: 20px;
 			font-family: $bad;
+			@include fade(0,100px,true,0);
 		}
 
 		&__text {
 			margin: 0 auto;
 			max-width: 100%;
 			margin-bottom: 30px;
+			@include fade(0,100px,true,1);
 
 			p {
 				font-family: $bad;

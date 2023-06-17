@@ -1820,11 +1820,27 @@ Blocks Styles
 				        align-items: center;
 				grid-gap: 40px;
 }
+.editor-styles-wrapper .acf-block-preview .hero__data a {
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
+				        transform: var(--fade-transform, translateX(0) translateY(100px));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				-webkit-transition-delay: 0.6s;
+				        transition-delay: 0.6s;
+}
 .editor-styles-wrapper .acf-block-preview .hero__title {
 				color: #74B5B0;
 				text-transform: uppercase;
 				text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 				font-family: "Abril Fatface", cursive, sans-serif;
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
+				        transform: var(--fade-transform, translateX(0) translateY(100px));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				-webkit-transition-delay: 0.4s;
+				        transition-delay: 0.4s;
 }
 .editor-styles-wrapper .acf-block-preview .hero__subtitle {
 				font-weight: 300;
@@ -1871,6 +1887,11 @@ Blocks Styles
 				height: 100%;
 				background-color: rgba(0, 0, 0, 0.3);
 				z-index: 1;
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(0));
+				        transform: var(--fade-transform, translateX(0) translateY(0));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero-home__video img,
 .editor-styles-wrapper .acf-block-preview .hero--home .hero-home__video video,
@@ -1884,6 +1905,13 @@ Blocks Styles
 				font-family: "Montserrat", sans-serif;
 				font-family: "Bad Script", cursive, sans-serif;
 				text-transform: uppercase;
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
+				        transform: var(--fade-transform, translateX(0) translateY(100px));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				-webkit-transition-delay: 0.2s;
+				        transition-delay: 0.2s;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__content {
 				padding-bottom: 0;
@@ -3706,7 +3734,7 @@ Blocks Styles
 				width: 100%;
 				min-height: 300px;
 				overflow: hidden;
-				border-radius: 6%;
+				border-radius: 1%;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item {
@@ -3762,11 +3790,23 @@ Blocks Styles
 				color: #000;
 				margin-bottom: 20px;
 				font-family: "Bad Script", cursive, sans-serif;
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
+				        transform: var(--fade-transform, translateX(0) translateY(100px));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text {
 				margin: 0 auto;
 				max-width: 100%;
 				margin-bottom: 30px;
+				opacity: var(--fade-opacity, 0);
+				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
+				        transform: var(--fade-transform, translateX(0) translateY(100px));
+				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+				-webkit-transition-delay: 0.2s;
+				        transition-delay: 0.2s;
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p {
 				font-family: "Bad Script", cursive, sans-serif;
@@ -3922,3 +3962,4 @@ Blocks Styles
 .block-editor-block-list__layout .block-editor-block-list__block {
 				max-width: 100%;
 }
+/*# sourceMappingURL=editor.css.map */

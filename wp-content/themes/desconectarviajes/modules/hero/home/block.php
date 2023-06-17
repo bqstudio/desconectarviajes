@@ -20,7 +20,7 @@
 
  do_action( 'palermo_pre_render_block', $block );
  ?>
-<section class="hero hero--home">
+<section class="hero hero--home" data-in="200">
     <?php $media_type = get_field('media_type');?>
     <?php if ($media_type == ('video_file') && $video_file = get_field('video_file')): ?>
         <div class="hero-home__video">
