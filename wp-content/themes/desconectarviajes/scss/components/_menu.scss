@@ -6,15 +6,14 @@
   position: relative;
 
   @include responsive('tablet-h') {
-    padding: 20px 30px;
-    margin-top: 114px;
+    padding: 120px 30px;
     display: none;
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     background: #ffffff;
-    height: calc(100vh - 114px);
+    height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -23,8 +22,9 @@
     margin: 0 15px;
 
     @include responsive('tablet-h') {
-      margin: 0;
-      border-bottom: 1px solid #D2D4D5;
+      margin: 20px auto;
+      width: 10%;
+      text-align: center;
     }
 
     @include responsiveMin('tablet-h') {
@@ -45,6 +45,10 @@
 
       &:hover {
         opacity: 0.5;
+      }
+
+      @include responsive('tablet-h') {
+        color: $secondary-color;
       }
     }
   }
@@ -115,7 +119,7 @@
 .menu-responsive-open {
   .responsive__btn {
     span {
-      background: $white;
+      background: $secondary-color;
     }
 
     span:nth-child(1) {
