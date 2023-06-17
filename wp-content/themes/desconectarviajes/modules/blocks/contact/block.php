@@ -29,8 +29,13 @@
             <div class="contact__content">
                 <div class="contact__data">
                     <?php echo ($data = get_field('data'))? '<h3 class="contact__subtitle h5">'.$data.'</h3>':''; ?>
-
+                    <?php if (get_field('instagram','option')) { ?>
+                    <a href="<?php the_field('instagram','option') ?>" target="_blank"  title="Visit our Instagram Page">
+                        <?php get_template_part('images/socials/instagram'); ?>
+                    </a>
+                    <?php }  ?>
                 </div>
+
                 <?php if ($form_id = get_field('form_id')): ?> 
                     <div class="contact__form">
                         <div class="formBox" >
