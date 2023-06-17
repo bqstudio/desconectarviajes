@@ -19,7 +19,7 @@ $white: #ffffff !default;
 $grey: #dddddd !default;
 $black: #000 !default;
 $green-pallette: #74B5AF !default;
-$blue-pallette:#49769F !default;
+$blue-pallette: #49769F !default;
 
 
 /// @type Length
@@ -40,7 +40,7 @@ $font-sizes: (
 
 $font-sizes-tablet: (
   'h1': 70px,
-  s 'h2': 70px,
+  'h2': 50px,
   'h3': 28px,
   'h4': 24px,
   'h5': 16px,
@@ -49,8 +49,8 @@ $font-sizes-tablet: (
   ) !default;
 
 $font-sizes-mobile: (
-  'h1': 70px,
-  'h2': 40px,
+  'h1': 40px,
+  'h2': 32px,
   'h3': 28px,
   'h4': 24px,
   'h5': 16px,

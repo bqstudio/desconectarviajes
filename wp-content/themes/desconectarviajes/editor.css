@@ -193,7 +193,7 @@ Blocks Styles
 				.editor-styles-wrapper .acf-block-preview h1,
 .editor-styles-wrapper .acf-block-preview .h1,
 .editor-styles-wrapper .acf-block-preview .h1 p {
-								font-size: 70px;
+								font-size: 40px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview h2,
@@ -204,11 +204,18 @@ Blocks Styles
 				font-weight: 700;
 				line-height: 0.86;
 }
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview h2,
+.editor-styles-wrapper .acf-block-preview .h2,
+.editor-styles-wrapper .acf-block-preview .h2 p {
+								font-size: 50px;
+				}
+}
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h2,
 .editor-styles-wrapper .acf-block-preview .h2,
 .editor-styles-wrapper .acf-block-preview .h2 p {
-								font-size: 40px;
+								font-size: 32px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview h3,
@@ -1371,9 +1378,14 @@ Blocks Styles
 				line-height: 0.86;
 				text-align: center;
 }
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview .single-header__title {
+								font-size: 50px;
+				}
+}
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .single-header__title {
-								font-size: 40px;
+								font-size: 32px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .single-header__introduction {
@@ -1457,7 +1469,7 @@ Blocks Styles
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .single-content__cont h1 {
-								font-size: 70px;
+								font-size: 40px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .single-content__cont h2 {
@@ -1466,9 +1478,14 @@ Blocks Styles
 				font-weight: 700;
 				line-height: 0.86;
 }
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview .single-content__cont h2 {
+								font-size: 50px;
+				}
+}
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .single-content__cont h2 {
-								font-size: 40px;
+								font-size: 32px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .single-content__cont h3 {
@@ -3372,7 +3389,7 @@ Blocks Styles
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .text_block__cont h1 {
-								font-size: 70px;
+								font-size: 40px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text_block__cont h2 {
@@ -3381,9 +3398,14 @@ Blocks Styles
 				font-weight: 700;
 				line-height: 0.86;
 }
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview .text_block__cont h2 {
+								font-size: 50px;
+				}
+}
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .text_block__cont h2 {
-								font-size: 40px;
+								font-size: 32px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text_block__cont h3 {
@@ -3638,6 +3660,12 @@ Blocks Styles
 				grid-template-columns: 1fr 1fr;
 				grid-gap: 20px;
 				padding: 20px 0;
+}
+@media only screen and (max-width: 1050px) {
+				.editor-styles-wrapper .acf-block-preview .contact__content {
+								-ms-grid-columns: 1fr;
+								grid-template-columns: 1fr;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .contact__subtitle {
 				margin-bottom: 20px;
@@ -3990,4 +4018,3 @@ Blocks Styles
 .block-editor-block-list__layout .block-editor-block-list__block {
 				max-width: 100%;
 }
-/*# sourceMappingURL=editor.css.map */
