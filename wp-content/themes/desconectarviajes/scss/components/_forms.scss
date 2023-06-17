@@ -1,4 +1,5 @@
 $form_gap: 30px;
+
 .site,
 .woocommerce,
 .woocommerce .site {
@@ -6,37 +7,40 @@ $form_gap: 30px;
 		margin: 0;
 		padding: 0;
 
-		.gform_fields{
+		.gform_fields {
 			display: flex;
 			flex-wrap: wrap;
 			width: 100%;
 			gap: 0 $form_gap;
 		}
-		.gfield{
+
+		.gfield {
 			width: 100%;
+
 			select,
 			input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
 			textarea {
-				width: 100%
+				width: 100%;
+
+				&::placeholder {
+					color: $white;
+				}
 			}
 		}
-		.gfield--width-half{
-			width: calc( 50% - $form_gap/2 );        
+
+		.gfield--width-third {
+			width: calc(33% - ($form_gap*2/3));
 		}
 
-		.gfield--width-third{
-			width: calc( 33% - ($form_gap*2/3) );        
+		.gfield--width-quarter {
+			width: calc(25% - ($form_gap*3/4));
 		}
 
-		.gfield--width-quarter{
-			width: calc( 25% - ($form_gap*3/4) );
-		}
-	
-		.top_label .gfield_label, 
+		.top_label .gfield_label,
 		legend.gfield_label {
-		  display: none;
+			display: none;
 		}
-	
+
 		input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
 		textarea {
 			@include inputs();
@@ -75,6 +79,7 @@ $form_gap: 30px;
 		}
 
 		.ginput_complex.ginput_container_address {
+
 			span,
 			span.ginput_right+span.ginput_left {
 				width: 100%;
@@ -89,9 +94,9 @@ $form_gap: 30px;
 			}
 		}
 
-		.gform_footer input.button, 
-		.gform_footer input[type=submit], 
-		.gform_page_footer input.button, 
+		.gform_footer input.button,
+		.gform_footer input[type=submit],
+		.gform_page_footer input.button,
 		.gform_page_footer input[type=submit] {
 			@include h7();
 		}
@@ -117,7 +122,7 @@ $form_gap: 30px;
 		}
 
 		.gfield_checkbox li input,
-		.gfield_checkbox li input[type=checkbox], 
+		.gfield_checkbox li input[type=checkbox],
 		.gfield_radio li input[type=radio] {
 			display: none;
 		}
@@ -141,8 +146,8 @@ $form_gap: 30px;
 			}
 		}
 
-		.gchoice_select_all, 
-		ul.gfield_checkbox li input[type=checkbox]:checked+label, 
+		.gchoice_select_all,
+		ul.gfield_checkbox li input[type=checkbox]:checked+label,
 		ul.gfield_radio li input[type=radio]:checked+label {
 			&:after {
 				position: absolute;
@@ -157,48 +162,15 @@ $form_gap: 30px;
 	}
 }
 
-.formBox {
-	input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-	textarea {
-		@include inputs();
-		width: 100%;
-		margin-bottom: 8px;
-		background: $white;
-	}
-
-	p {
-		@include h7();
-		color: $third-color;
-		line-height: 1.2;
-
-		a {
-			color: $primary-color;
-			text-decoration: underline;
-
-			&:hover {
-				color: $secondary-color;
-			}
-		}
-	}
-}
-
-.form_block {
-	.formBox {
-		margin: 0 auto;
-		width: 337px;
-		max-width: 100%;
-
-		.gform_footer {
-			text-align: center;
-		}		
-	}
+.gform_wrapper.gravity-theme .gfield textarea.large {
+	height: 150px !important;
 }
 
 // hide antispam honeypot
-.gform_validation_container, 
-.gform_wrapper .gform_validation_container, 
-body .gform_wrapper li.gform_validation_container, 
-body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container, 
+.gform_validation_container,
+.gform_wrapper .gform_validation_container,
+body .gform_wrapper li.gform_validation_container,
+body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
 body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	display: none;
 	position: absolute;

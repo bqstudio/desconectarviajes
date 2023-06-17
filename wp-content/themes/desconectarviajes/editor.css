@@ -475,13 +475,21 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site-menu {
-								padding: 20px;
-								padding-top: 114px;
-								display: block;
+								padding: 20px 30px;
+								margin-top: 114px;
+								display: none;
+								position: absolute;
+								left: 0;
+								top: 0;
+								width: 100%;
+								background: #ffffff;
+								height: calc(100vh - 114px);
+								overflow-y: scroll;
+								overflow-x: hidden;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .site-menu__item {
-				margin: 0 30px;
+				margin: 0 15px;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site-menu__item {
@@ -503,10 +511,14 @@ Blocks Styles
 				color: #ffffff;
 				text-decoration: none;
 }
+.editor-styles-wrapper .acf-block-preview .site-menu__item--text:hover {
+				opacity: 0.5;
+}
 .editor-styles-wrapper .acf-block-preview .scrolled header .site-menu__item--text {
 				color: #74B5B0;
 }
 .editor-styles-wrapper .acf-block-preview .responsive__btn {
+				background: transparent;
 				float: left;
 				position: relative;
 				z-index: 11;
@@ -549,7 +561,7 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .menu-responsive-open .responsive__btn span {
-				background: #000;
+				background: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .menu-responsive-open .responsive__btn span:nth-child(1) {
 				top: 9px;
@@ -694,11 +706,7 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .woocommerce a.button:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce button.button:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce input.button:hover {
-				background-color: transparent;
-				color: #49769F;
-				color: #002D50;
-				border: 2px solid #49769F;
-				border: 2px solid #002D50;
+				opacity: 0.7;
 }
 .editor-styles-wrapper .acf-block-preview .button--arrow,
 .editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--arrow,
@@ -729,13 +737,6 @@ Blocks Styles
 				background: url(images/icons/arrow-white-btn.svg) no-repeat center/contain;
 				-webkit-transition: 0.5s ease;
 				transition: 0.5s ease;
-}
-.editor-styles-wrapper .acf-block-preview .button--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--arrow:hover::after {
-				background: url(images/icons/arrow-blue-btn.svg) no-repeat center/contain;
 }
 .editor-styles-wrapper .acf-block-preview .button--arrow--special,
 .editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--arrow--special,
@@ -795,74 +796,6 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .woocommerce input.button + .button {
 				margin-left: 20px;
 }
-.editor-styles-wrapper .acf-block-preview .button--special--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--special--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--special--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--special--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--special--arrow::after {
-				content: "";
-				width: 22px;
-				height: 14px;
-				background: url(images/examples/left-arrow.svg) no-repeat center/contain;
-				display: inline-block;
-				margin-left: 15px;
-}
-.editor-styles-wrapper .acf-block-preview .button--special--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--special--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--special--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--special--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--special--arrow:hover::after {
-				content: "";
-				background: url(images/examples/arrow-white-btn.svg) no-repeat center/contain;
-}
-.editor-styles-wrapper .acf-block-preview .button--tertiary--arrow,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--tertiary--arrow,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--tertiary--arrow,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--tertiary--arrow,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--tertiary--arrow {
-				border: 2px solid var(--wty);
-				color: #ffffff !important;
-				width: 100%;
-				text-align: left;
-				margin-bottom: 15px;
-}
-.editor-styles-wrapper .acf-block-preview .button--tertiary--arrow:nth-last-child(1),
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--tertiary--arrow:nth-last-child(1),
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--tertiary--arrow:nth-last-child(1),
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--tertiary--arrow:nth-last-child(1),
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--tertiary--arrow:nth-last-child(1) {
-				margin-bottom: 0;
-}
-.editor-styles-wrapper .acf-block-preview .button--tertiary--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--tertiary--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--tertiary--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--tertiary--arrow::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--tertiary--arrow::after {
-				content: "";
-				width: 22px;
-				height: 14px;
-				background: url(images/examples/arrow-white-btn.svg) no-repeat center/contain;
-				display: inline-block;
-				margin-left: 15px;
-				float: right;
-}
-.editor-styles-wrapper .acf-block-preview .button--tertiary--arrow:hover,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--tertiary--arrow:hover,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--tertiary--arrow:hover,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--tertiary--arrow:hover,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--tertiary--arrow:hover {
-				background: #74B5B0 !important;
-				color: #000 !important;
-				border: 2px solid #74B5B0;
-}
-.editor-styles-wrapper .acf-block-preview .button--tertiary--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--tertiary--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--tertiary--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--tertiary--arrow:hover::after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--tertiary--arrow:hover::after {
-				content: "";
-				background: url(images/examples/arrow-blue-btn.svg) no-repeat center/contain;
-}
 .editor-styles-wrapper .acf-block-preview .site .gform_wrapper,
 .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper,
 .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper {
@@ -896,10 +829,28 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea {
 				width: 100%;
 }
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield--width-half,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield--width-half,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield--width-half {
-				width: calc(50% - 15px);
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield select::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield textarea::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield select::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield textarea::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield select::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea::-webkit-input-placeholder {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield select::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield textarea::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield select::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield textarea::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield select::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea::-moz-placeholder {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield select:-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield textarea:-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield select:-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield textarea:-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield select:-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea:-ms-input-placeholder {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield select::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield textarea::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield select::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield textarea::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield select::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea::-ms-input-placeholder {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield select::placeholder,
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
+.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield textarea::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield select::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield textarea::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield select::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
+.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfield textarea::placeholder {
+				color: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfield--width-third,
 .editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfield--width-third,
@@ -928,7 +879,7 @@ Blocks Styles
 				height: 40px;
 				line-height: 40px;
 				background: none;
-				border: 1px solid #B9D6EA;
+				border: 1px solid #ffffff;
 				padding: 0 25px;
 				font-size: 16px;
 				font-family: "Montserrat", sans-serif;
@@ -1249,80 +1200,8 @@ Blocks Styles
 				background: #74B5B0;
 				content: "";
 }
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .formBox textarea {
-				height: 40px;
-				line-height: 40px;
-				background: none;
-				border: 1px solid #B9D6EA;
-				padding: 0 25px;
-				font-size: 16px;
-				font-family: "Montserrat", sans-serif;
-				font-weight: 400;
-				line-height: 1.25;
-				color: #000;
-				width: 100%;
-				margin-bottom: 8px;
-				background: #ffffff;
-}
-@media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .formBox textarea {
-								font-size: 16px;
-				}
-}
-@media only screen and (max-width: 600px) {
-				.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .formBox textarea {
-								font-size: 16px;
-				}
-}
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-webkit-input-placeholder, .editor-styles-wrapper .acf-block-preview .formBox textarea::-webkit-input-placeholder {
-				color: #BBBFC1;
-}
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-moz-placeholder, .editor-styles-wrapper .acf-block-preview .formBox textarea::-moz-placeholder {
-				color: #BBBFC1;
-}
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]):-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .formBox textarea:-ms-input-placeholder {
-				color: #BBBFC1;
-}
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::-ms-input-placeholder, .editor-styles-wrapper .acf-block-preview .formBox textarea::-ms-input-placeholder {
-				color: #BBBFC1;
-}
-.editor-styles-wrapper .acf-block-preview .formBox input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file])::placeholder,
-.editor-styles-wrapper .acf-block-preview .formBox textarea::placeholder {
-				color: #BBBFC1;
-}
-.editor-styles-wrapper .acf-block-preview .formBox p {
-				font-size: 12px;
-				font-family: "Montserrat", sans-serif;
-				color: #B9D6EA;
-				line-height: 1.2;
-}
-@media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .formBox p {
-								font-size: 12px;
-				}
-}
-@media only screen and (max-width: 600px) {
-				.editor-styles-wrapper .acf-block-preview .formBox p {
-								font-size: 12px;
-				}
-}
-.editor-styles-wrapper .acf-block-preview .formBox p a {
-				color: #000;
-				text-decoration: underline;
-}
-.editor-styles-wrapper .acf-block-preview .formBox p a:hover {
-				color: #74B5B0;
-}
-.editor-styles-wrapper .acf-block-preview .form_block .formBox {
-				margin: 0 auto;
-				width: 337px;
-				max-width: 100%;
-}
-.editor-styles-wrapper .acf-block-preview .form_block .formBox .gform_footer {
-				text-align: center;
+.editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme .gfield textarea.large {
+				height: 150px !important;
 }
 .editor-styles-wrapper .acf-block-preview .gform_validation_container,
 .editor-styles-wrapper .acf-block-preview .gform_wrapper .gform_validation_container,
@@ -1515,7 +1394,12 @@ Blocks Styles
 				width: 620px;
 				max-width: 100%;
 }
-.editor-styles-wrapper .acf-block-preview .single-content__cont h1, .editor-styles-wrapper .acf-block-preview .single-content__cont h2, .editor-styles-wrapper .acf-block-preview .single-content__cont h3, .editor-styles-wrapper .acf-block-preview .single-content__cont h4, .editor-styles-wrapper .acf-block-preview .single-content__cont h5, .editor-styles-wrapper .acf-block-preview .single-content__cont h6 {
+.editor-styles-wrapper .acf-block-preview .single-content__cont h1,
+.editor-styles-wrapper .acf-block-preview .single-content__cont h2,
+.editor-styles-wrapper .acf-block-preview .single-content__cont h3,
+.editor-styles-wrapper .acf-block-preview .single-content__cont h4,
+.editor-styles-wrapper .acf-block-preview .single-content__cont h5,
+.editor-styles-wrapper .acf-block-preview .single-content__cont h6 {
 				color: #000;
 				margin-bottom: 20px;
 }
@@ -1628,7 +1512,8 @@ Blocks Styles
 								font-size: 16px;
 				}
 }
-.editor-styles-wrapper .acf-block-preview .single-content__cont ul, .editor-styles-wrapper .acf-block-preview .single-content__cont ol {
+.editor-styles-wrapper .acf-block-preview .single-content__cont ul,
+.editor-styles-wrapper .acf-block-preview .single-content__cont ol {
 				padding-left: 15px;
 				margin-bottom: 28px;
 				line-height: 1.6;
@@ -2056,16 +1941,25 @@ Blocks Styles
 				z-index: 10;
 				background: transparent;
 }
-.editor-styles-wrapper .acf-block-preview .header__top {
+.editor-styles-wrapper .acf-block-preview .header__top, .editor-styles-wrapper .acf-block-preview .header__bottom {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
 				width: 100%;
-				padding: 40px 0 27px 0;
+				padding: 20px 0;
+				-webkit-box-pack: justify;
+				    -ms-flex-pack: justify;
+				        justify-content: space-between;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
 }
 @media only screen and (max-width: 1050px) {
-				.editor-styles-wrapper .acf-block-preview .header__top {
-								padding: 20px;
+				.editor-styles-wrapper .acf-block-preview .header__top, .editor-styles-wrapper .acf-block-preview .header__bottom {
+								padding: 20px 0;
 				}
 }
-.editor-styles-wrapper .acf-block-preview .header__top__left {
+.editor-styles-wrapper .acf-block-preview .header__top__left, .editor-styles-wrapper .acf-block-preview .header__bottom__left {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -2073,7 +1967,15 @@ Blocks Styles
 				    -ms-flex-align: center;
 				        align-items: center;
 }
-.editor-styles-wrapper .acf-block-preview .header__top__right {
+.editor-styles-wrapper .acf-block-preview .header__top__center, .editor-styles-wrapper .acf-block-preview .header__bottom__center {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				    -ms-flex-align: center;
+				        align-items: center;
+}
+.editor-styles-wrapper .acf-block-preview .header__top__right, .editor-styles-wrapper .acf-block-preview .header__bottom__right {
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: flex;
@@ -2121,7 +2023,7 @@ Blocks Styles
 				    -ms-flex-direction: column;
 				        flex-direction: column;
 				width: 100%;
-				background-color: #C3B5B0;
+				background-color: #FFFAF0;
 }
 .editor-styles-wrapper .acf-block-preview .site-footer__cont {
 				padding: 15px 0;
@@ -3428,7 +3330,12 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .text_block__cont {
 				width: 100%;
 }
-.editor-styles-wrapper .acf-block-preview .text_block__cont h1, .editor-styles-wrapper .acf-block-preview .text_block__cont h2, .editor-styles-wrapper .acf-block-preview .text_block__cont h3, .editor-styles-wrapper .acf-block-preview .text_block__cont h4, .editor-styles-wrapper .acf-block-preview .text_block__cont h5, .editor-styles-wrapper .acf-block-preview .text_block__cont h6 {
+.editor-styles-wrapper .acf-block-preview .text_block__cont h1,
+.editor-styles-wrapper .acf-block-preview .text_block__cont h2,
+.editor-styles-wrapper .acf-block-preview .text_block__cont h3,
+.editor-styles-wrapper .acf-block-preview .text_block__cont h4,
+.editor-styles-wrapper .acf-block-preview .text_block__cont h5,
+.editor-styles-wrapper .acf-block-preview .text_block__cont h6 {
 				color: #000;
 				margin-bottom: 20px;
 }
@@ -3541,7 +3448,8 @@ Blocks Styles
 								font-size: 16px;
 				}
 }
-.editor-styles-wrapper .acf-block-preview .text_block__cont ul, .editor-styles-wrapper .acf-block-preview .text_block__cont ol {
+.editor-styles-wrapper .acf-block-preview .text_block__cont ul,
+.editor-styles-wrapper .acf-block-preview .text_block__cont ol {
 				padding-left: 15px;
 				margin-bottom: 28px;
 				line-height: 1.6;
@@ -3687,7 +3595,7 @@ Blocks Styles
 				        transition-delay: 0.4s;
 }
 .editor-styles-wrapper .acf-block-preview .contact__title {
-				color: #C3B5B0;
+				color: #ffffff;
 				margin-bottom: 20px;
 				font-family: "Bad Script", cursive, sans-serif;
 				text-align: center;
@@ -3753,8 +3661,8 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__title__heading {
 				margin-bottom: 20px;
 				text-align: center;
-				color: #C3B5B0;
-				font-family: "Abril Fatface", cursive, sans-serif;
+				color: #ffffff;
+				font-family: "Bad Script", cursive, sans-serif;
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__text {
 				margin: 0 auto;
@@ -3834,6 +3742,7 @@ Blocks Styles
 				width: 100%;
 				min-height: 300px;
 				overflow: hidden;
+				border-radius: 6%;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item {
@@ -4049,4 +3958,3 @@ Blocks Styles
 .block-editor-block-list__layout .block-editor-block-list__block {
 				max-width: 100%;
 }
-/*# sourceMappingURL=editor.css.map */

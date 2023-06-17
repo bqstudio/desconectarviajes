@@ -19,4 +19,8 @@ jQuery(document).ready(function ($) {
 		$(window).scrollTop() >= 5 ? $('body').addClass('scrolled') : $('body').removeClass('scrolled');
 	});
 
+	$('.responsive__btn').on('click', () => $('body').toggleClass('menu-responsive-open'));
+	$('.js-open-block').click(function () {
+		$('.site-menu').fadeToggle();
+	});
 });

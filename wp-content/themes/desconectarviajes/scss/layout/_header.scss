@@ -6,16 +6,24 @@
   z-index: 10;
   background: transparent;
 
-
-  &__top {
+  &__top,
+  &__bottom {
+    display: flex;
     width: 100%;
-    padding: 40px 0 27px 0;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
 
     @include responsive('tablet-h') {
-      padding: 20px;
+      padding: 20px 0;
     }
 
     &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__center {
       display: flex;
       align-items: center;
     }

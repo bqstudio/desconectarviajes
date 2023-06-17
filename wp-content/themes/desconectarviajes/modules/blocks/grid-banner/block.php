@@ -24,7 +24,7 @@
     <div class="module grid grid--banner" id="destinos">
         <div class="container">
             <?php echo ($title = get_field('title'))? '<h4 class="grid__title__heading h3">'.$title.'</h4>':''; ?>
-            <?php echo ($description = get_field('description'))? '<p class="grid__text">'.$description.'</p>':''; ?>
+            <?php echo ($description = get_field('description'))? '<div class="grid__text">'.$description.'</div>':''; ?>
             
             <?php if (have_rows('items')) : ?>
                 <div class="grid__content <?php echo 'n-item-' . count(get_field('items')); ?>">

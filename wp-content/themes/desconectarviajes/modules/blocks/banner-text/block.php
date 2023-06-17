@@ -32,7 +32,7 @@ do_action( 'palermo_pre_render_block', $block );
     $button = ( !empty($button) ) ? $button : '';
 ?>
 
-<section class="wrapper padding-b">
+<section class="wrapper padding-b bg-color">
     <section class="module banner banner--text" id="mision">
         <div class="container">
             

@@ -34,17 +34,18 @@
 	<header class="header">
 		<div class="container">
 			<div class="header__top">
-				<div class="header__top__left">				
+				<div class="header__top__left"> 		
 					<?php get_template_part('modules/components/site-logo'); ?>
-					<div class="header__bottom" data-block="menu">
-						<?php get_template_part('modules/components/menu'); ?> 
-					</div>
 				</div>
 				<div class="header__top__right">
-					<?php get_template_part('//modules/components/responisve-btn'); ?>
+					<div tabindex="0" data-block="menu" class="js-open-block responsive__btn" title="Open Menu">
+						<span></span><span></span><span></span><span></span>
+					</div>
+					<?php get_template_part('modules/components/menu'); ?>
+					<?php get_template_part('modules/components/popup'); ?>
 				</div>
-			</div>
-			
+			</div>	
+
 		</div>
 	</header>
 
