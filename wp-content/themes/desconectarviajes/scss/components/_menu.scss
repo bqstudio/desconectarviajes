@@ -54,6 +54,12 @@
   }
 }
 
+body:not(.home) {
+  .site-menu__item--text {
+    color: $secondary-color;
+  }
+}
+
 .scrolled {
 
   header {

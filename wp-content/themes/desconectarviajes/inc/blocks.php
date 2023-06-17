@@ -240,26 +240,21 @@ Wrap default wp blocks in a container
 */
 
 add_filter( 'render_block', 'wrap_classic_block', 10, 2 );
-function wrap_classic_block( $block_content, $block ) {
-    
-    if ( 
-        substr($block['blockName'], 0, 3) != 'acf' AND
+function wrap_classic_block($block_content, $block) {
+    if (
+        isset($block['blockName']) && // Check if $block['blockName'] is set
+        substr($block['blockName'], 0, 3) != 'acf' &&
         $block['blockName'] != ''
     ) {
-       	$blockclass = explode('/', $block['blockName']); 
-        $block_content_return = '<div class="container '.$blockclass[1].' default_block ">';
-		$block_content_return .= $block_content;
-		$block_content_return .= '</div>';
+        $blockclass = explode('/', $block['blockName']);
+        $block_content_return = '<div class="container ' . $blockclass[1] . ' default_block ">';
+        $block_content_return .= $block_content;
+        $block_content_return .= '</div>';
 
-		return $block_content_return;
+        return $block_content_return;
     }
     return $block_content;
 }
-
-
-
-
-
 
 
 add_action( 'palermo_pre_render_block', 'pre_render_block_cb', 10, 1 );

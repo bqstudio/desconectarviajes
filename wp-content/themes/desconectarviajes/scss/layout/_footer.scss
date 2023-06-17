@@ -16,7 +16,10 @@
     @include h7();
     color: $primary-color;
     text-align: center;
-    width: 100%;
+  }
+
+  .site-logo {
+    width: 80px;
   }
 
   .site-footer__bq {

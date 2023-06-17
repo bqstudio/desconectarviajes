@@ -9,11 +9,11 @@
 					<div class="site-footer__column">
 						<?php get_template_part('modules/components/site-logo'); ?>
 					</div>
+					<?php get_template_part('modules/components/copyright'); ?>
 					<div class="site-footer__bq">
 						By <a href="https://bq-studio.com/" target="_blank" tabindex="0">BQ-Studio</a>
 					</div>
 				</div>
-				<?php get_template_part('modules/components/copyright'); ?>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
