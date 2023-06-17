@@ -245,3 +245,25 @@ strong * {
   box-shadow: #333 0 0 10px;
   z-index: 1000;
 }
+
+.error-404 {
+  justify-content: center;
+  align-items: center;
+  height: 30vw;
+
+  @include responsive('mobile-h') {
+    height: 80vw;
+  }
+
+  .page-header {
+    text-align: center;
+
+    .page-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .button {
+    margin: 20px auto;
+  }
+}
