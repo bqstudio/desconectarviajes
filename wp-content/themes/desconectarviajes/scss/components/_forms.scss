@@ -162,6 +162,15 @@ $form_gap: 30px;
 	}
 }
 
+.gform_wrapper.gravity-theme .gform_validation_errors,
+.gfield_validation_message,
+.gform_wrapper.gravity-theme .validation_message {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+}
+
 .gform_wrapper.gravity-theme .gfield textarea.large {
 	height: 150px !important;
 }
