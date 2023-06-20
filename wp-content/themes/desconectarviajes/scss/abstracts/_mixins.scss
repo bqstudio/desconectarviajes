@@ -114,6 +114,10 @@
 	@include h6();
 	color: $primary-color;
 
+	@include responsive('mobile-h') {
+		padding: 0 8px;
+	}
+
 	&::placeholder {
 		color: #BBBFC1;
 	}

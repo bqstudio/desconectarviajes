@@ -10,6 +10,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include responsive('mobile-h') {
+      flex-direction: column;
+      gap: 40px;
+    }
   }
 
   .copyright {
@@ -19,7 +24,7 @@
   }
 
   .site-logo {
-    width: 80px;
+    width: 110px;
   }
 
   .site-footer__bq {

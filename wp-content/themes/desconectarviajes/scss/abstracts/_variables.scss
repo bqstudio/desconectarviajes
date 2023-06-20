@@ -4,6 +4,9 @@ $secondary-font: 'Montserrat', sans-serif !default;
 $abril: 'Abril Fatface', cursive, sans-serif !default;
 $bad: 'Bad Script', cursive, sans-serif !default;
 $roboto: 'Roboto Mono', monospace !default;
+$lato:  'Lato', sans-serif !default;
+$poppins:'Poppins', sans-serif !default;
+
 
 /* font-family: 'Abril Fatface', cursive;
 font-family: 'Bad Script', cursive;
@@ -73,12 +76,12 @@ $separator: (
   ) !default;
 
 $separator-tablet: (
-  'big': 100px,
+  'big': 80px,
   'short': 40px,
   ) !default;
 
 $separator-mobile: (
-  'big': 100px,
+  'big': 50px,
   'short': 40px,
   ) !default;
 

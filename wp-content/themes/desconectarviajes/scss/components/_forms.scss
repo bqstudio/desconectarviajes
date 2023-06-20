@@ -99,6 +99,11 @@ $form_gap: 30px;
 		.gform_page_footer input.button,
 		.gform_page_footer input[type=submit] {
 			@include h7();
+			border-radius: 30px;
+
+			@include responsive('mobile-h') {
+				width: 100%;
+			}
 		}
 
 		li.gfield.gfield_error,

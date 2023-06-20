@@ -112,6 +112,10 @@
                 width: 100%;
             }
 
+            @include responsive ('mobile-h') {
+                grid-column: span 2;
+            }
+
             &::before {
                 content: '';
                 width: 100%;

@@ -57,6 +57,10 @@
 		&__left {
 			text-align: left;
 			flex: 700;
+
+			@include responsive('mobile-h') {
+				text-align: center;
+			}
 		}
 
 		&__right {
