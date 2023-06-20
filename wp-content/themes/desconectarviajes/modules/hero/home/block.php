@@ -40,8 +40,8 @@
     <div class="hero__content">
         <div class="hero__data">
             <?php 
-            echo ($upper_title = get_field('upper_title'))? '<h2 class="hero__uppertitle h4">'.$upper_title.'</h2>':'';
             echo ($title = get_field('title'))? '<h1 class="hero__title h1">'.$title.'</h1>':'';
+            echo ($upper_title = get_field('upper_title'))? '<h2 class="hero__uppertitle h4">'.$upper_title.'</h2>':'';
             if( $button = get_field('button')): ?>
                 <a class="button button--arrow" href="<?php echo $button['url']; ?>" target="<?php echo $button['target']; ?>"><?php echo $button['title']; ?></a>
             <?php endif; ?>

@@ -106,6 +106,8 @@
             min-height: 300px;
             overflow: hidden;
             border-radius: 1%;
+            transition: all .3s ease;
+            cursor: pointer;
 
             @include responsive ('tablet-h') {
                 grid-column: 1/1;
@@ -122,12 +124,26 @@
                 height: 100%;
                 background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 5%, rgb(14 77 142) 100%);
                 @include absolute();
-                z-index: 2;
+                z-index: 2; 
+            }
+
+            img {
+                transition: all .3s ease;
+            }
+
+            &:hover {
+                transition: all .3s ease;
+                img {
+                    transform: scale3d(1.05,1.05,1.05);
+                }
             }
         }
 
         &__title {
             font-family: $secondary-font;
+            font-family: $bad;
+            font-family: $lato;
+            font-family: $poppins;
             text-transform: uppercase;
             color: $white;
             z-index: 3;
@@ -140,7 +156,7 @@
                 max-width: 100%;
                 margin: 0 auto;
                 display: block;
-                margin-top: 10px;
+                margin-top: 5px;
             }
         }
     }

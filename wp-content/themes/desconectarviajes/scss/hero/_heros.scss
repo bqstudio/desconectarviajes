@@ -43,7 +43,7 @@
         text-transform: uppercase;
         text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
         font-family: $abril;
-        @include fade(0,100px,true,2)
+        @include fade(0,100px,true,1)
     }
 
     &__subtitle {

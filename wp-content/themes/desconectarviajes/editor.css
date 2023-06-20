@@ -768,7 +768,6 @@ Blocks Styles
 				    -ms-flex-pack: justify;
 				        justify-content: space-between;
 				grid-gap: 20px;
-				max-width: 260px;
 				margin: 0 auto;
 }
 .editor-styles-wrapper .acf-block-preview .button--arrow::after,
@@ -1899,8 +1898,8 @@ Blocks Styles
 				        transform: var(--fade-transform, translateX(0) translateY(100px));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-				-webkit-transition-delay: 0.4s;
-				        transition-delay: 0.4s;
+				-webkit-transition-delay: 0.2s;
+				        transition-delay: 0.2s;
 }
 .editor-styles-wrapper .acf-block-preview .hero__subtitle {
 				font-weight: 300;
@@ -1970,8 +1969,8 @@ Blocks Styles
 				        transform: var(--fade-transform, translateX(0) translateY(100px));
 				-webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 				transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-				-webkit-transition-delay: 0.2s;
-				        transition-delay: 0.2s;
+				-webkit-transition-delay: 0.4s;
+				        transition-delay: 0.4s;
 }
 .editor-styles-wrapper .acf-block-preview .hero--home .hero__content {
 				padding-bottom: 0;
@@ -3823,6 +3822,9 @@ Blocks Styles
 				min-height: 300px;
 				overflow: hidden;
 				border-radius: 1%;
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+				cursor: pointer;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item {
@@ -3850,8 +3852,23 @@ Blocks Styles
 				height: 100%;
 				z-index: 2;
 }
+.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item img {
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+}
+.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item:hover {
+				-webkit-transition: all 0.3s ease;
+				transition: all 0.3s ease;
+}
+.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item:hover img {
+				-webkit-transform: scale3d(1.05, 1.05, 1.05);
+				        transform: scale3d(1.05, 1.05, 1.05);
+}
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__title {
 				font-family: "Montserrat", sans-serif;
+				font-family: "Bad Script", cursive, sans-serif;
+				font-family: "Lato", sans-serif;
+				font-family: "Poppins", sans-serif;
 				text-transform: uppercase;
 				color: #ffffff;
 				z-index: 3;
@@ -3864,7 +3881,7 @@ Blocks Styles
 				max-width: 100%;
 				margin: 0 auto;
 				display: block;
-				margin-top: 10px;
+				margin-top: 5px;
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .floating-link {
 				position: absolute;
