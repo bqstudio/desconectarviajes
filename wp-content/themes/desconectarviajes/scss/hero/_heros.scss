@@ -10,25 +10,6 @@
     &__image {
         @include absolute();
         z-index: -1;
-
-        &::before,
-        &::after {
-            content: '';
-            @include absolute();
-            z-index: 2;
-        }
-
-        &::before {
-            height: 222px;
-            background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
-        }
-
-        &::after {
-            top: auto;
-            bottom: 0;
-            height: 392px;
-            background: linear-gradient(180deg, rgba(0, 45, 80, 0.0001) 0%, rgba(0, 45, 80, 0.8) 53.44%, #002D50 94.67%);
-        }
     }
 
     &__content {
@@ -48,8 +29,12 @@
         align-items: center;
         grid-gap: 40px;
 
+        @include responsive('mobile-h') {
+            gap: 25px;
+        }
+
         a {
-            @include fade(0,100px,true,3)
+            @include fade(0,100px,true,3);
         }
     }
 

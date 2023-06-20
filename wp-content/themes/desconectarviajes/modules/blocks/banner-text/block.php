@@ -43,7 +43,7 @@ do_action( 'palermo_pre_render_block', $block );
 
             <?php if (!empty($text)) {?>
                 <div class="banner__text">
-                    <p><?php  echo wp_kses_post( $text ); ?></p>
+                    <?php  echo wp_kses_post( $text ); ?>
                 </div>
             <?php } ?>
 

@@ -1845,27 +1845,6 @@ Blocks Styles
 				height: 100%;
 				z-index: -1;
 }
-.editor-styles-wrapper .acf-block-preview .hero__image::before, .editor-styles-wrapper .acf-block-preview .hero__image::after {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 2;
-}
-.editor-styles-wrapper .acf-block-preview .hero__image::before {
-				height: 222px;
-				background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(rgba(0, 0, 0, 0.0001)));
-				background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.0001) 100%);
-}
-.editor-styles-wrapper .acf-block-preview .hero__image::after {
-				top: auto;
-				bottom: 0;
-				height: 392px;
-				background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 45, 80, 0.0001)), color-stop(53.44%, rgba(0, 45, 80, 0.8)), color-stop(94.67%, #002D50));
-				background: linear-gradient(180deg, rgba(0, 45, 80, 0.0001) 0%, rgba(0, 45, 80, 0.8) 53.44%, #002D50 94.67%);
-}
 .editor-styles-wrapper .acf-block-preview .hero__content {
 				width: 960px;
 				max-width: 100%;
@@ -1895,6 +1874,11 @@ Blocks Styles
 				    -ms-flex-align: center;
 				        align-items: center;
 				grid-gap: 40px;
+}
+@media only screen and (max-width: 750px) {
+				.editor-styles-wrapper .acf-block-preview .hero__data {
+								gap: 25px;
+				}
 }
 .editor-styles-wrapper .acf-block-preview .hero__data a {
 				opacity: var(--fade-opacity, 0);
@@ -3724,6 +3708,12 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .contact__gobar {
 				text-align: center;
 }
+.editor-styles-wrapper .acf-block-preview .contact__link {
+				font-size: 16px;
+}
+.editor-styles-wrapper .acf-block-preview .contact__link:hover {
+				opacity: 0.7;
+}
 .editor-styles-wrapper .acf-block-preview .block-slider {
 				padding: 100px 0;
 }
@@ -3915,6 +3905,9 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p {
 				font-family: "Bad Script", cursive, sans-serif;
 				letter-spacing: 1px;
+}
+.editor-styles-wrapper .acf-block-preview .banner--text .banner__text p:only-child {
+				margin-bottom: 0;
 }
 .editor-styles-wrapper .acf-block-preview .banner--textimage {
 				text-align: center;

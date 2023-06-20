@@ -21,6 +21,10 @@
 			p {
 				font-family: $bad;
 				letter-spacing: 1px;
+
+				&:only-child {
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
