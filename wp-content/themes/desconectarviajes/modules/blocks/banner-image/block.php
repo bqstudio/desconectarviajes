@@ -23,7 +23,7 @@ do_action( 'palermo_pre_render_block', $block );
 <section class="wrapper padding-b bg-color">
     <section class="module banner banner--image" id="ofertas">
         <div class="image-background">
-            <img src="<?php echo get_template_directory_uri();?>/images/examples/playa.jpg">
+            <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>
         </div>
         <div class="banner--image__content">
             <div class="banner--image__text">
@@ -32,7 +32,7 @@ do_action( 'palermo_pre_render_block', $block );
             </div>
             <div class="banner--image__flyer">
                 <div class="image-background">
-                    <?php get_template_part('modules/components/image',NULL,array('image' => get_field('flyer')) ); ?>
+                    <?php get_template_part('modules/components/image',NULL,array('image_flyer' => get_field('flyer')) ); ?>
                 </div>
             </div>
         </div>
