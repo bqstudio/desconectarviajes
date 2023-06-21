@@ -1,10 +1,8 @@
 .contact {
 
     &__title {
+		@include title();
         color: $white;
-        margin-bottom: 20px;
-        font-family: $bad;
-        text-align: center;
     }
 
     &__text {

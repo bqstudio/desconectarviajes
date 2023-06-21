@@ -122,3 +122,10 @@
 		color: #BBBFC1;
 	}
 }
+
+@mixin title() {
+	@include h3();
+	font-family: $bad;
+	text-align: center;
+	margin-bottom: 30px;
+}

@@ -6,9 +6,8 @@
 	.banner {
 
 		&__title {
+			@include title();
 			color: $primary-color;
-			margin-bottom: 20px;
-			font-family: $bad;
 			@include fade(0,100px,true,0);
 		}
 

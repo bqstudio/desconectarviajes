@@ -2,10 +2,8 @@
 
     .grid {
         &__title__heading {
-            margin-bottom: 20px;
-            text-align: center;
+            @include title();
             color: $white;
-            font-family: $bad;
         }
 
         &__text {
@@ -109,9 +107,10 @@
             transition: all .3s ease;
             cursor: pointer;
             text-decoration: none;
+            padding: 0 15px;
 
             @include responsive ('tablet-h') {
-                grid-column: 1/1;
+                //grid-column: 1/1;
                 width: 100%;
             }
 
@@ -123,7 +122,7 @@
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 5%, rgb(14 77 142) 100%);
+                background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 20%, rgb(14 77 142) 100%);
                 @include absolute();
                 z-index: 2; 
             }
@@ -152,7 +151,7 @@
 
             &::after {
                 content: '';
-                border-top: 2px solid #FFD200;
+                border-top: 4px solid $green-pallette;
                 width: 60px;
                 max-width: 100%;
                 margin: 0 auto;

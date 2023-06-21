@@ -27,9 +27,7 @@
         }
 
         &__heading {
-            margin-bottom: 20px;
-            font-family: "Bad Script",cursive,sans-serif;
-            text-align: center;
+			@include title();
         }
     }
 }
