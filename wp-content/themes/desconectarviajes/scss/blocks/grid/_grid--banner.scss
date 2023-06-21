@@ -108,6 +108,7 @@
             border-radius: 1%;
             transition: all .3s ease;
             cursor: pointer;
+            text-decoration: none;
 
             @include responsive ('tablet-h') {
                 grid-column: 1/1;

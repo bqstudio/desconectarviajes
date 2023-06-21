@@ -3,13 +3,12 @@
     .banner {
 
         &__content {
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
-            flex-flow: row wrap;
-            justify-content: center;
 
             @include responsive('mobile-h') {
-                flex-direction: column;
+                grid-template-columns: 1fr;
                 gap: 20px;
             }
         }
@@ -17,8 +16,7 @@
         &__flyer {
             position: relative;
             aspect-ratio: 1;
-            width: 450px;
-            max-width: 100%;
+            width: 100%;
             order-radius: 1%;
             overflow: hidden;
         }

@@ -25,6 +25,11 @@
 				&:only-child {
 					margin-bottom: 0;
 				}
+
+				img {
+					max-width: 60%;
+					aspect-ratio: 2;
+				}
 			}
 		}
 	}

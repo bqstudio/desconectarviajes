@@ -1805,7 +1805,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .hero_simple__image img {
 				display: block;
-				height: 100vh;
+				height: 80vh;
 				-o-object-fit: cover;
 				   object-fit: cover;
 				width: 100%;
@@ -3825,6 +3825,7 @@ Blocks Styles
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
 				cursor: pointer;
+				text-decoration: none;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item {
@@ -3925,6 +3926,10 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p:only-child {
 				margin-bottom: 0;
+}
+.editor-styles-wrapper .acf-block-preview .banner--text .banner__text p img {
+				max-width: 60%;
+				aspect-ratio: 2;
 }
 .editor-styles-wrapper .acf-block-preview .banner--textimage {
 				text-align: center;
@@ -4070,32 +4075,23 @@ Blocks Styles
 				background-color: #FFFAF0;
 }
 .editor-styles-wrapper .acf-block-preview .banner--image .banner__content {
-				display: -webkit-box;
-				display: -ms-flexbox;
-				display: flex;
+				display: -ms-grid;
+				display: grid;
+				-ms-grid-columns: 1fr 40px 1fr;
+				grid-template-columns: repeat(2, 1fr);
 				gap: 40px;
-				-webkit-box-orient: horizontal;
-				-webkit-box-direction: normal;
-				    -ms-flex-flow: row wrap;
-				        flex-flow: row wrap;
-				-webkit-box-pack: center;
-				    -ms-flex-pack: center;
-				        justify-content: center;
 }
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .banner--image .banner__content {
-								-webkit-box-orient: vertical;
-								-webkit-box-direction: normal;
-								    -ms-flex-direction: column;
-								        flex-direction: column;
+								-ms-grid-columns: 1fr;
+								grid-template-columns: 1fr;
 								gap: 20px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .banner--image .banner__flyer {
 				position: relative;
 				aspect-ratio: 1;
-				width: 450px;
-				max-width: 100%;
+				width: 100%;
 				order-radius: 1%;
 				overflow: hidden;
 }
@@ -4120,3 +4116,4 @@ Blocks Styles
 .block-editor-block-list__layout .block-editor-block-list__block {
 				max-width: 100%;
 }
+/*# sourceMappingURL=editor.css.map */
