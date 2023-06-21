@@ -20,7 +20,7 @@
 
 do_action( 'palermo_pre_render_block', $block );
 ?>
-<section class="wrapper wrapper--white padding-b">
+<section class="wrapper wrapper--white padding-b" data-waypoint='.25'>
     <div class="module banner banner--image" id="ofertas">
         <div class="container">
             <?php echo ($heading = get_field('heading'))? '<h4 class="banner__heading h3">'.$heading.'</h4>':''; ?>

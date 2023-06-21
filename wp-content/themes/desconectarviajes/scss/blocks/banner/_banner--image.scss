@@ -19,15 +19,22 @@
             width: 100%;
             border-radius: 1%;
             overflow: hidden;
+            @include fade(-100px,0,true,2);
+        }
+
+        &__description {
+            @include fade(100px,0,true,2);
         }
 
         &__title {
             font-weight: 700;
             margin-bottom: 20px;
+
         }
 
         &__heading {
 			@include title();
+            @include fade(0,100px,true,0);
         }
     }
 }

@@ -8,12 +8,14 @@
 		&__title {
 			@include title();
 			color: $primary-color;
+			@include fade(0,100px,true,0);
 		}
 
 		&__text {
 			margin: 0 auto;
 			max-width: 100%;
 			margin-bottom: 30px;
+			@include fade(0,100px,true,1);
 
 			p {
 				letter-spacing: 1px;
@@ -26,6 +28,7 @@
 			flex-flow: row wrap;
 			gap: 40px;
 			align-items: center;
+			@include fade(0,100px,true,2);
 
 			@include responsive('tablet-h') {
 				flex-direction: column;
