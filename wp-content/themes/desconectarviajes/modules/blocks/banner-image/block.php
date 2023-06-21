@@ -20,9 +20,10 @@
 
 do_action( 'palermo_pre_render_block', $block );
 ?>
-<section class="wrapper padding-b bg-color">
+<section class="wrapper wrapper--white padding-b">
     <div class="module banner banner--image" id="ofertas">
         <div class="container">
+            <?php echo ($heading = get_field('heading'))? '<h4 class="banner__heading h3">'.$heading.'</h4>':''; ?>
             <div class="banner__content">
                 <div class="banner__flyer">
                     <div class="image-background">
@@ -31,7 +32,7 @@ do_action( 'palermo_pre_render_block', $block );
                 </div>
                 <div class="banner__description">
                     <div class="banner__text">
-                        <?php echo ($title = get_field('title'))? '<h2 class="bannerimage__title h3 ">'.$title.'</h2>':'';
+                        <?php echo ($title = get_field('title'))? '<h2 class="banner__title h4 ">'.$title.'</h2>':'';
                         echo ($text = get_field('text'))? '<div class="banner__text">'.$text.'</div>':''; ?>
                     </div>
                 </div>

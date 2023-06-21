@@ -191,6 +191,10 @@ strong * {
   &--blue {
     background-color: $third-color;
   }
+
+  &--white {
+    background-color: $white;
+  }
 }
 
 .module {
