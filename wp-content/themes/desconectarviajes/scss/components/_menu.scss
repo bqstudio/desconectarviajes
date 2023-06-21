@@ -42,9 +42,17 @@
     &--text {
       color: $white;
       text-decoration: none;
+      background-image: linear-gradient(90deg,$green-pallette);
+      background-repeat: no-repeat;
+      background-size: 0 2px;
+      background-position: left bottom;
 
       &:hover {
-        opacity: 0.5;
+        opacity: 0.7;
+      /*  border-bottom: 4px solid $green-pallette;
+        width: 20%; */
+        background-size: 100% 2px;
+        transition: background-size 500ms ease-in-out;
       }
 
       @include responsive('tablet-h') {

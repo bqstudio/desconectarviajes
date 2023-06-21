@@ -550,9 +550,19 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .site-menu__item--text {
 				color: #ffffff;
 				text-decoration: none;
+				background-image: -webkit-gradient(linear, left top, right top, from(#74B5AF));
+				background-image: linear-gradient(90deg, #74B5AF);
+				background-repeat: no-repeat;
+				background-size: 0 2px;
+				background-position: left bottom;
 }
 .editor-styles-wrapper .acf-block-preview .site-menu__item--text:hover {
-				opacity: 0.5;
+				opacity: 0.7;
+				/*  border-bottom: 4px solid $green-pallette;
+				  width: 20%; */
+				background-size: 100% 2px;
+				-webkit-transition: background-size 500ms ease-in-out;
+				transition: background-size 500ms ease-in-out;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site-menu__item--text {
