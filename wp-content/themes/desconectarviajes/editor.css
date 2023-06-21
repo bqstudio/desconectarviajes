@@ -3709,9 +3709,6 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .contact__subtitle {
 				margin-bottom: 20px;
 }
-.editor-styles-wrapper .acf-block-preview .contact__subtitle p {
-				text-transform: capitalize;
-}
 .editor-styles-wrapper .acf-block-preview .contact__data p {
 				text-align: left;
 }
@@ -3723,6 +3720,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .contact__link {
 				font-size: 16px;
+				text-transform: capitalize;
 }
 .editor-styles-wrapper .acf-block-preview .contact__link:hover {
 				opacity: 0.7;
@@ -3893,11 +3891,11 @@ Blocks Styles
 				        transform: scale3d(1.05, 1.05, 1.05);
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__title {
-				font-family: "Montserrat", sans-serif;
 				font-family: "Bad Script", cursive, sans-serif;
 				font-family: "Lato", sans-serif;
 				font-family: "Poppins", sans-serif;
-				text-transform: uppercase;
+				font-family: "Montserrat", sans-serif;
+				text-transform: capitalize;
 				color: #ffffff;
 				z-index: 3;
 				text-align: center;

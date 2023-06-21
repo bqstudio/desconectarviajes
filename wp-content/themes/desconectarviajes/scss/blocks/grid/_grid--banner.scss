@@ -140,11 +140,11 @@
         }
 
         &__title {
-            font-family: $secondary-font;
             font-family: $bad;
             font-family: $lato;
             font-family: $poppins;
-            text-transform: uppercase;
+            font-family: $secondary-font;
+            text-transform: capitalize;
             color: $white;
             z-index: 3;
             text-align: center;

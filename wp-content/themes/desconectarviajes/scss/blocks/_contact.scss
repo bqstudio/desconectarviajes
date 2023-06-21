@@ -33,7 +33,7 @@
         margin-bottom: 20px;
 
         p {
-            text-transform: capitalize;
+            //text-transform: capitalize;
         }
 
     }
@@ -55,6 +55,7 @@
 
     &__link {
         font-size: 16px;
+        text-transform: capitalize;
 
         &:hover {
             opacity: 0.7;
