@@ -46,7 +46,7 @@
             </div>
             <div class="contact__gobar">
                 <h3 class="contact__subtitle h5">
-                    <p><a href="https://tramitesadistancia.gob.ar/tramitesadistancia/detalle-tipo?id=624" tabindex="0" class="contact__link">denuncia contra la agencia</a></p>
+                    <p><a href="https://tramitesadistancia.gob.ar/tramitesadistancia/detalle-tipo?id=624" tabindex="0" class="contact__link" target="_blank">denuncia contra la agencia</a></p>
                 </h3>
             </div>
         </div>

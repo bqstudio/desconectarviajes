@@ -407,6 +407,9 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .wrapper--blue {
 				background-color: #B9D6EA;
 }
+.editor-styles-wrapper .acf-block-preview .wrapper--white {
+				background-color: #ffffff;
+}
 .editor-styles-wrapper .acf-block-preview .module {
 				margin-top: 40px;
 }
@@ -4065,6 +4068,45 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .bg-color {
 				background-color: #FFFAF0;
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__content {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				gap: 40px;
+				-webkit-box-orient: horizontal;
+				-webkit-box-direction: normal;
+				    -ms-flex-flow: row wrap;
+				        flex-flow: row wrap;
+				-webkit-box-pack: center;
+				    -ms-flex-pack: center;
+				        justify-content: center;
+}
+@media only screen and (max-width: 750px) {
+				.editor-styles-wrapper .acf-block-preview .banner--image .banner__content {
+								-webkit-box-orient: vertical;
+								-webkit-box-direction: normal;
+								    -ms-flex-direction: column;
+								        flex-direction: column;
+								gap: 20px;
+				}
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__flyer {
+				position: relative;
+				aspect-ratio: 1;
+				width: 450px;
+				max-width: 100%;
+				order-radius: 1%;
+				overflow: hidden;
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__title {
+				font-weight: 700;
+				margin-bottom: 20px;
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__heading {
+				margin-bottom: 20px;
+				font-family: "Bad Script", cursive, sans-serif;
+				text-align: center;
 }
 .editor-styles-wrapper .wp-block {
 				overflow: hidden;

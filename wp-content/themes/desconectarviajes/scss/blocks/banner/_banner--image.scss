@@ -2,5 +2,36 @@
 
     .banner {
 
+        &__content {
+            display: flex;
+            gap: 40px;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            @include responsive('mobile-h') {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+
+        &__flyer {
+            position: relative;
+            aspect-ratio: 1;
+            width: 450px;
+            max-width: 100%;
+            order-radius: 1%;
+            overflow: hidden;
+        }
+
+        &__title {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        &__heading {
+            margin-bottom: 20px;
+            font-family: "Bad Script",cursive,sans-serif;
+            text-align: center;
+        }
     }
 }
