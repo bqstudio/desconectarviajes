@@ -26,7 +26,7 @@ do_action( 'palermo_pre_render_block', $block );
             <div class="banner__content">
                 <div class="banner__flyer">
                     <div class="image-background">
-                        <?php get_template_part('modules/components/image',NULL,array('image' => get_sub_field('image')) ); ?>
+                        <?php get_template_part('modules/components/image',NULL,array('image' => get_field('image')) ); ?>
                     </div>
                 </div>
                 <div class="banner__description">
