@@ -1,34 +1,61 @@
 .hero_simple {
-    margin-top: 30px;
-    margin-bottom: 79px;
     text-align: center;
+    position: relative;
 
-    @include responsive('tablet-v') {
-        margin-bottom: 39px;
+    .container_big {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        transform: translate(0, -50%);
+        padding: 0 186px;
+
+        @include responsive('tablet-h') {
+            padding: 0 60px;
+        }
+
+        @include responsive('mobile-v') {
+            padding: 0 30px;
+        }
+    }
+
+    &__cont {
+        overflow: hidden;
+    }
+
+    &__image {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to left, rgba(35, 41, 55, 0), #232937);
+            opacity: .7;
+        }
+
+        img {
+            display: block;
+            height: 100vh;
+            object-fit: cover;
+            width: 100%;
+        }
     }
 
     &__title {
-        @include h3();
-        color: $primary-color;
-    }
-
-    &__text,
-    .term-description {
-        width: 700px;
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: 30px;
-        @include h5();
-        color: $third-color;
-        line-height: 1.5;  
-        padding: 0 20px;    
-
-        @include responsive('mobile-v') {
-            margin-top: 15px;
-        }
+        color: $white;
+        line-height: 1.2;
+        letter-spacing: 5px;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
     }
 }
 
-.hero_simple + section {
-   margin-top: 0; 
+.hero_simple+section {
+    margin-top: 0;
 }
