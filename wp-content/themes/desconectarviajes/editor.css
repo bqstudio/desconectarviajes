@@ -4092,7 +4092,7 @@ Blocks Styles
 				position: relative;
 				aspect-ratio: 1;
 				width: 100%;
-				order-radius: 1%;
+				border-radius: 1%;
 				overflow: hidden;
 }
 .editor-styles-wrapper .acf-block-preview .banner--image .banner__title {
