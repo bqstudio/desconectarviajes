@@ -29,6 +29,11 @@
             <div class="contact__content">
                 <div class="contact__data">
                     <?php echo ($data = get_field('data'))? '<h3 class="contact__subtitle h5">'.$data.'</h3>':''; ?>
+
+                    <a href="file.pdf" download="Disposición Habilitante" class="download-file">
+                        Disposición Habilitante
+                    </a>
+
                     <?php if (get_field('instagram','option')) { ?>
                     <a href="<?php the_field('instagram','option') ?>" target="_blank"  title="Visit our Instagram Page">
                         <?php get_template_part('images/socials/instagram'); ?>

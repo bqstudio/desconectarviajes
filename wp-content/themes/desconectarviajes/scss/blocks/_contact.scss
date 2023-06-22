@@ -61,4 +61,12 @@
             opacity: 0.7;
         }
     }
+
+    .download-file {
+        width: 100%;
+        display: block;
+        margin: 20px 0;
+        text-decoration: none;
+        color: $primary-color;
+    }
 }

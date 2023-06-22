@@ -3735,6 +3735,13 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .contact__link:hover {
 				opacity: 0.7;
 }
+.editor-styles-wrapper .acf-block-preview .contact .download-file {
+				width: 100%;
+				display: block;
+				margin: 20px 0;
+				text-decoration: none;
+				color: #000;
+}
 .editor-styles-wrapper .acf-block-preview .block-slider {
 				padding: 100px 0;
 }
