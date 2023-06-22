@@ -4200,6 +4200,7 @@ Blocks Styles
 				-ms-grid-columns: 1fr 40px 1fr;
 				grid-template-columns: repeat(2, 1fr);
 				gap: 40px;
+				overflow: hidden;
 }
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .banner--image .banner__content {

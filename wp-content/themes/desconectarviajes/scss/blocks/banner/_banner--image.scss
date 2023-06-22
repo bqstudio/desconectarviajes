@@ -6,6 +6,7 @@
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
+            overflow: hidden;
 
             @include responsive('mobile-h') {
                 grid-template-columns: 1fr;
