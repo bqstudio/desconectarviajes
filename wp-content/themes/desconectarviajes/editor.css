@@ -1299,6 +1299,11 @@ Blocks Styles
 				font-size: 16px;
 				padding: 10px 25px;
 }
+@media only screen and (max-width: 750px) {
+				.editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme .gfield textarea.large {
+								padding: 8px;
+				}
+}
 .editor-styles-wrapper .acf-block-preview .gform_validation_container,
 .editor-styles-wrapper .acf-block-preview .gform_wrapper .gform_validation_container,
 .editor-styles-wrapper .acf-block-preview body .gform_wrapper li.gform_validation_container,
