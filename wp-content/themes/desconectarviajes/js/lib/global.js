@@ -34,6 +34,12 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
+	$('.js-open-block').click(function (event) {
+		event.stopPropagation(); // Evita la propagación del evento de clic
+		// Lógica para abrir y cerrar el menú aquí
+	});
+
+
 	// Ejecutar la verificación inicial al cargar la página
 	$(window).trigger('resize');
 

@@ -1,7 +1,7 @@
 .contact {
 
     &__title {
-		@include title();
+        @include title();
         color: $white;
     }
 
@@ -67,6 +67,5 @@
         display: block;
         margin: 20px 0;
         text-decoration: none;
-        color: $primary-color;
     }
 }

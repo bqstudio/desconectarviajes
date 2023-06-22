@@ -30,9 +30,9 @@
                 <div class="contact__data">
                     <?php echo ($data = get_field('data'))? '<h3 class="contact__subtitle h5">'.$data.'</h3>':''; ?>
 
-                    <a href="file.pdf" download="Disposición Habilitante" class="download-file">
-                        Disposición Habilitante
-                    </a>
+                    <?php if ($pdf = get_field('pdf')):?>
+                        <a class="download-file" href="<?php echo $pdf['url']; ?>" target="_blank"><?php echo $pdf['title']; ?></a>
+                    <?php endif; ?>
 
                     <?php if (get_field('instagram','option')) { ?>
                     <a href="<?php the_field('instagram','option') ?>" target="_blank"  title="Visit our Instagram Page">
