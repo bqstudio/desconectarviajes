@@ -43,6 +43,10 @@
         p {
             text-align: left;
         }
+
+        a {
+            text-decoration: none;
+        }
     }
 
     &__form {
@@ -66,6 +70,7 @@
         width: 100%;
         display: block;
         margin: 20px 0;
-        text-decoration: none;
+        color: $primary-color;
+        text-decoration: underline;
     }
 }
