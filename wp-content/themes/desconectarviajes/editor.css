@@ -312,6 +312,9 @@ Blocks Styles
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
 }
+.editor-styles-wrapper .acf-block-preview a:hover {
+				opacity: 0.7;
+}
 .editor-styles-wrapper .acf-block-preview b,
 .editor-styles-wrapper .acf-block-preview strong,
 .editor-styles-wrapper .acf-block-preview strong * {
@@ -557,12 +560,10 @@ Blocks Styles
 				background-position: left bottom;
 }
 .editor-styles-wrapper .acf-block-preview .site-menu__item--text:hover {
-				opacity: 0.7;
-				/*  border-bottom: 4px solid $green-pallette;
-				  width: 20%; */
 				background-size: 100% 2px;
 				-webkit-transition: background-size 500ms ease-in-out;
 				transition: background-size 500ms ease-in-out;
+				opacity: 1;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site-menu__item--text {

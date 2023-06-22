@@ -104,6 +104,10 @@ h6,
 a {
   color: $secondary-color;
   transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 b,
