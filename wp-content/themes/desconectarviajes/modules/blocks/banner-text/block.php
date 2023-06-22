@@ -33,7 +33,7 @@ do_action( 'palermo_pre_render_block', $block );
 ?>
 
 <section class="wrapper padding-b bg-color" >
-    <section class="module banner banner--text" id="mision" data-waypoint='.25' >
+    <section class="module banner banner--text" id="servicios" data-waypoint='.25' >
         <div class="container">
             
             <!-- //ifempty -->
