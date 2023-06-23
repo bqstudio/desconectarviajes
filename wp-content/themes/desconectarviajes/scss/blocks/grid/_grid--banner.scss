@@ -11,11 +11,13 @@
             //width: 1200px;
             max-width: 100%;
             margin-bottom: 40px;
+            color: $white;
             @include fade(0,100px,true,1);
 
             p {
                 letter-spacing: 0.5px;
                 text-align: center;
+                color: $white;
             }
         }
 

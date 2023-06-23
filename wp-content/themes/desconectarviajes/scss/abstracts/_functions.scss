@@ -44,7 +44,7 @@
   font-size: map-get($font-sizes, h1);
   font-family: $secondary-font;
   font-weight: 700;
-  line-height: 0.80;
+  line-height: 1.2;
 
   @include responsive('tablet-h') {
     font-size: map-get($font-sizes-tablet, h1);
@@ -59,7 +59,7 @@
   font-size: map-get($font-sizes, h2);
   font-family: $secondary-font;
   font-weight: 700;
-  line-height: 0.86;
+  line-height: 1;
 
   @include responsive('tablet-h') {
     font-size: map-get($font-sizes-tablet, h2);
@@ -74,7 +74,7 @@
   font-size: map-get($font-sizes, h3);
   font-family: $secondary-font;
   font-weight: 700;
-  line-height: 0.90;
+  line-height: 1;
 
   @include responsive('tablet-h') {
     font-size: map-get($font-sizes-tablet, h3);

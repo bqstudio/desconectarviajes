@@ -30,11 +30,16 @@
         &__title {
             font-weight: 700;
             margin-bottom: 20px;
+            color: $white;
+        }
 
+        &__text {
+            color: $white;
         }
 
         &__heading {
 			@include title();
+            color: $white;
             @include fade(0,100px,true,0);
         }
     }

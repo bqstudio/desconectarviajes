@@ -27,23 +27,17 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-gap: 40px;
-
-        @include responsive('mobile-h') {
-            gap: 25px;
-        }
+        grid-gap: 25px;
 
         a {
-            @include fade(0,100px,true,3);
+            @include fade(0,100px,true,1);
         }
     }
 
     &__title {
         color: $secondary-color;
         text-transform: uppercase;
-        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-        font-family: $abril;
-        @include fade(0,100px,true,1)
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
     }
 
     &__subtitle {
@@ -53,11 +47,11 @@
         font-family: $default-font;
     }
 
-    .misc {
+    /*  .misc {
         width: 121px;
         height: 2px;
         background: $white;
-    }
+    } */
 
     &__text {
         color: $white;
@@ -68,7 +62,7 @@
     }
 }
 
-.hero--blog,
+/* .hero--blog,
 .hero--post {
     aspect-ratio: 2.49;
 
@@ -79,7 +73,7 @@
             }
         }
     }
-}
+} */
 
 .hero--home {
     justify-content: center;

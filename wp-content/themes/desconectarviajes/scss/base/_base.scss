@@ -199,6 +199,14 @@ strong * {
   &--white {
     background-color: $white;
   }
+
+  &--green {
+    background-color: $green-pallette;
+  }
+
+  &--beige {
+    background-color: $beige-pallette;
+  }
 }
 
 .module {

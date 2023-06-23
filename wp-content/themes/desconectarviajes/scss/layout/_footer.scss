@@ -1,6 +1,6 @@
 .site-footer {
   @include row();
-  background-color: #FFFAF0;
+  background-color: $beige-pallette;
 
   &__cont {
     padding: 15px 0;
@@ -29,10 +29,10 @@
 
   .site-footer__bq {
     font-size: 14px;
-    color: #000;
+    color: $primary-color;
 
     a {
-      color: #000;
+      color: $primary-color;
       text-decoration: none;
 
       &:hover {

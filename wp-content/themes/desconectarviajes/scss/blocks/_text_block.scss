@@ -1,6 +1,41 @@
-.text_block {
-    &__cont {
-        @include text-block();
-        width: 100%;
-    }
+.text-block {
+	//margin: 0 auto;
+	display: flex;
+
+	.banner {
+
+		&__title {
+			@include title();
+			color: $primary-color;
+			@include fade(0,100px,true,0);
+		}
+
+		&__text {
+			margin: 0 auto;
+			max-width: 100%;
+			margin-bottom: 30px;
+			@include fade(0,100px,true,1);
+            @include text_block();
+
+			p {
+				letter-spacing: 1px;
+
+				&:only-child {
+					margin-bottom: 0;
+				}
+
+				img {
+					max-width: 60%;
+					aspect-ratio: 2;
+				}
+			}
+
+			h1,h2,h3,h4,h5, {
+				font-family: $bad;
+				font-weight: 700;
+				margin: 15px 0 30px 0;
+				text-transform: capitalize;
+			}
+		}
+	}
 }

@@ -1,9 +1,9 @@
 <?php
 /**
- * Banner Text
+ * Text Block
  *
- * Title:       Banner Text
- * Description: Banner Text
+ * Title:       Text Block
+ * Description: Text Block
  * Category:    palermo_hero
  * Icon:        align-full-width
  * Keywords:    hero
@@ -27,13 +27,10 @@ do_action( 'palermo_pre_render_block', $block );
 
     $text = get_field('text');
     $text = ( !empty($text) ) ? $text : '';
-
-    $button = get_field('button');
-    $button = ( !empty($button) ) ? $button : '';
 ?>
 
 <section class="wrapper wrapper--beige padding-b" >
-    <section class="module banner banner--text" id="servicios" data-waypoint='.25' >
+    <section class="module banner text-block" data-waypoint='.25' >
         <div class="container">
             
             <!-- //ifempty -->
@@ -46,13 +43,6 @@ do_action( 'palermo_pre_render_block', $block );
                     <?php  echo wp_kses_post( $text ); ?>
                 </div>
             <?php } ?>
-
-            <?php if (!empty($button)) {?>
-                <a href="<?php echo esc_attr($button['url']); ?>" class="button button--arrow" tabindex="0" target='<?php echo $button['target']?>'>
-                    <?php echo wp_kses_post ($button['title']); ?>
-                </a>
-            <?php } ?>
-
         </div>
     </section>
 </section>

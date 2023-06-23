@@ -20,6 +20,7 @@
 			p {
 				letter-spacing: 1px;
 				font-size: 16px;
+				margin-bottom: 15px;
 			}
 		}
 
@@ -48,10 +49,12 @@
 				margin-bottom: 30px;
 				font-family: $bad;
 				font-weight: 700;
+				color: $green-pallette;
 			}
 
 			p {
 				letter-spacing: 1px;
+				line-height: 1.8;
 			}
 
 		}
@@ -105,6 +108,7 @@
 			right: 0;
 			padding: 20px 0;
 			background-color: $white;
+			color: $green-pallette;
 			text-align: center;
 			width: 85%;
 			opacity: 0.90;
@@ -112,8 +116,4 @@
 			text-transform: capitalize;
 		}
 	}
-}
-
-.bg-color {
-	background-color: #FFFAF0; 
 }

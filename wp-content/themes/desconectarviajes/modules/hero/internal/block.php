@@ -27,7 +27,7 @@
     </div>
     <div class="container_big">
       <div class="hero_simple__text-cont">
-          <h1 class="hero_simple__title"><?php the_title(); ?></h1>
+          <h1 class="hero_simple__title h2"><?php the_title(); ?></h1>
       </div>
     </div>  
   </div>

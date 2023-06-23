@@ -7,7 +7,9 @@
             font-family: $default-font;
             font-family: $bad;
             text-transform: uppercase;
-            @include fade(0,100px,true,2)
+            @include fade(0,100px,true,0);
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            line-height: 1.8;
         }
 
         &__content {

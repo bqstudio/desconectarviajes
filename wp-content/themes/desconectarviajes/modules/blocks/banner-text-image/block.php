@@ -20,7 +20,7 @@
 
  do_action( 'palermo_pre_render_block', $block );
  ?>
-<section class="wrapper padding-b bg-color" data-waypoint='.25'>
+<section class="wrapper wrapper--beige padding-b " data-waypoint='.25'>
     <section class="module banner banner--textimage" id="nosotras">
         <div class="container">
             <?php echo ($title = get_field('title'))? '<h2 class="banner__title h3 ">'.$title.'</h2>':'';
