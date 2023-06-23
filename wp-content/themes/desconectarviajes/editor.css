@@ -197,15 +197,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h1,
-.editor-styles-wrapper .acf-block-preview .h1,
-.editor-styles-wrapper .acf-block-preview .h1 p {
+				.editor-styles-wrapper .acf-block-preview .h1,
+				.editor-styles-wrapper .acf-block-preview .h1 p {
 								font-size: 70px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h1,
-.editor-styles-wrapper .acf-block-preview .h1,
-.editor-styles-wrapper .acf-block-preview .h1 p {
+				.editor-styles-wrapper .acf-block-preview .h1,
+				.editor-styles-wrapper .acf-block-preview .h1 p {
 								font-size: 40px;
 				}
 }
@@ -219,15 +219,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h2,
-.editor-styles-wrapper .acf-block-preview .h2,
-.editor-styles-wrapper .acf-block-preview .h2 p {
+				.editor-styles-wrapper .acf-block-preview .h2,
+				.editor-styles-wrapper .acf-block-preview .h2 p {
 								font-size: 50px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h2,
-.editor-styles-wrapper .acf-block-preview .h2,
-.editor-styles-wrapper .acf-block-preview .h2 p {
+				.editor-styles-wrapper .acf-block-preview .h2,
+				.editor-styles-wrapper .acf-block-preview .h2 p {
 								font-size: 32px;
 				}
 }
@@ -241,15 +241,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h3,
-.editor-styles-wrapper .acf-block-preview .h3,
-.editor-styles-wrapper .acf-block-preview .h3 p {
+				.editor-styles-wrapper .acf-block-preview .h3,
+				.editor-styles-wrapper .acf-block-preview .h3 p {
 								font-size: 28px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h3,
-.editor-styles-wrapper .acf-block-preview .h3,
-.editor-styles-wrapper .acf-block-preview .h3 p {
+				.editor-styles-wrapper .acf-block-preview .h3,
+				.editor-styles-wrapper .acf-block-preview .h3 p {
 								font-size: 28px;
 				}
 }
@@ -263,15 +263,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h4,
-.editor-styles-wrapper .acf-block-preview .h4,
-.editor-styles-wrapper .acf-block-preview .h4 p {
+				.editor-styles-wrapper .acf-block-preview .h4,
+				.editor-styles-wrapper .acf-block-preview .h4 p {
 								font-size: 24px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h4,
-.editor-styles-wrapper .acf-block-preview .h4,
-.editor-styles-wrapper .acf-block-preview .h4 p {
+				.editor-styles-wrapper .acf-block-preview .h4,
+				.editor-styles-wrapper .acf-block-preview .h4 p {
 								font-size: 24px;
 				}
 }
@@ -285,15 +285,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h5,
-.editor-styles-wrapper .acf-block-preview .h5,
-.editor-styles-wrapper .acf-block-preview .h5 p {
+				.editor-styles-wrapper .acf-block-preview .h5,
+				.editor-styles-wrapper .acf-block-preview .h5 p {
 								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h5,
-.editor-styles-wrapper .acf-block-preview .h5,
-.editor-styles-wrapper .acf-block-preview .h5 p {
+				.editor-styles-wrapper .acf-block-preview .h5,
+				.editor-styles-wrapper .acf-block-preview .h5 p {
 								font-size: 16px;
 				}
 }
@@ -307,15 +307,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview h6,
-.editor-styles-wrapper .acf-block-preview .h6,
-.editor-styles-wrapper .acf-block-preview .h6 p {
+				.editor-styles-wrapper .acf-block-preview .h6,
+				.editor-styles-wrapper .acf-block-preview .h6 p {
 								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview h6,
-.editor-styles-wrapper .acf-block-preview .h6,
-.editor-styles-wrapper .acf-block-preview .h6 p {
+				.editor-styles-wrapper .acf-block-preview .h6,
+				.editor-styles-wrapper .acf-block-preview .h6 p {
 								font-size: 16px;
 				}
 }
@@ -433,6 +433,11 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .module {
 				margin-top: 40px;
+				/* .container {
+				  *:nth-last-child(1) {
+				    margin-bottom: 0;
+				  }
+				} */
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .module {
@@ -459,9 +464,6 @@ Blocks Styles
 }
 .wrapper .editor-styles-wrapper .acf-block-preview .module:nth-child(1) {
 				margin-top: 0;
-}
-.editor-styles-wrapper .acf-block-preview .module .container *:nth-last-child(1) {
-				margin-bottom: 0;
 }
 .editor-styles-wrapper .acf-block-preview .btn-whatsapp {
 				position: fixed;
@@ -965,31 +967,31 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
 								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
 								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper textarea,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]),
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper textarea {
 								padding: 0 8px;
 				}
 }
@@ -1034,15 +1036,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfmc-column h4,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column h4,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column h4 {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column h4,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column h4 {
 								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfmc-column h4,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column h4,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column h4 {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column h4,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column h4 {
 								font-size: 16px;
 				}
 }
@@ -1055,15 +1057,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfmc-column .form__text,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column .form__text,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column .form__text {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column .form__text,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column .form__text {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gfmc-column .form__text,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column .form__text,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column .form__text {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gfmc-column .form__text,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gfmc-column .form__text {
 								font-size: 12px;
 				}
 }
@@ -1121,49 +1123,49 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper .gform_page_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_footer input[type=submit],
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input.button,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper .gform_page_footer input[type=submit] {
 								width: 100%;
 				}
 }
@@ -1182,21 +1184,21 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
 								font-size: 12px;
 				}
 }
@@ -1216,15 +1218,15 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper div.validation_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper div.validation_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper div.validation_error {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper div.validation_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper div.validation_error {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper div.validation_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper div.validation_error,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper div.validation_error {
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper div.validation_error,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper div.validation_error {
 								font-size: 12px;
 				}
 }
@@ -1254,21 +1256,21 @@ Blocks Styles
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_radio li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_radio li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_radio li label {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_radio li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_checkbox li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_radio li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_radio li label {
 								font-size: 12px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_radio li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_radio li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
-.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_radio li label {
+				.editor-styles-wrapper .acf-block-preview .site .gform_wrapper ul.gfield_radio li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_checkbox li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .gform_wrapper ul.gfield_radio li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_checkbox li label,
+				.editor-styles-wrapper .acf-block-preview .woocommerce .site .gform_wrapper ul.gfield_radio li label {
 								font-size: 12px;
 				}
 }
@@ -1658,22 +1660,25 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .single-content__cont blockquote {
 				padding-left: 30px;
-				border-left: 3px solid #000;
+				margin-bottom: 30px;
+				border-left: 5px solid #74B5AF;
 }
 .editor-styles-wrapper .acf-block-preview .single-content__cont blockquote p {
-				font-size: 26px;
+				font-size: 18px;
 				font-family: "Montserrat", sans-serif;
 				font-weight: 500;
 				line-height: 1.2;
+				font-style: italic;
+				line-height: 1.5;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .single-content__cont blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .single-content__cont blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .single-content__cont img {
@@ -2149,13 +2154,11 @@ Blocks Styles
 				--fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
 }
 @font-face {
-				.editor-styles-wrapper .acf-block-preview {
-								font-family: "Font Awesome 6 Brands";
-								font-style: normal;
-								font-weight: 400;
-								font-display: block;
-								src: url("webfonts/fa-brands-400.woff2") format("woff2"), url("webfonts/fa-brands-400.ttf") format("truetype");
-				}
+				font-family: "Font Awesome 6 Brands";
+				font-style: normal;
+				font-weight: 400;
+				font-display: block;
+				src: url("webfonts/fa-brands-400.woff2") format("woff2"), url("webfonts/fa-brands-400.ttf") format("truetype");
 }
 .editor-styles-wrapper .acf-block-preview .fab,
 .editor-styles-wrapper .acf-block-preview .fa-brands {
@@ -3586,22 +3589,25 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text blockquote {
 				padding-left: 30px;
-				border-left: 3px solid #000;
+				margin-bottom: 30px;
+				border-left: 5px solid #74B5AF;
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text blockquote p {
-				font-size: 26px;
+				font-size: 18px;
 				font-family: "Montserrat", sans-serif;
 				font-weight: 500;
 				line-height: 1.2;
+				font-style: italic;
+				line-height: 1.5;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .text-block .banner__text blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .text-block .banner__text blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text img {
@@ -3635,7 +3641,6 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text p {
-				font-family: "Montserrat", sans-serif;
 				letter-spacing: 1px;
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text p:only-child {
@@ -4208,22 +4213,25 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text blockquote {
 				padding-left: 30px;
-				border-left: 3px solid #000;
+				margin-bottom: 30px;
+				border-left: 5px solid #74B5AF;
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text blockquote p {
-				font-size: 26px;
+				font-size: 18px;
 				font-family: "Montserrat", sans-serif;
 				font-weight: 500;
 				line-height: 1.2;
+				font-style: italic;
+				line-height: 1.5;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .banner--text .banner__text blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 @media only screen and (max-width: 600px) {
 				.editor-styles-wrapper .acf-block-preview .banner--text .banner__text blockquote p {
-								font-size: 24px;
+								font-size: 16px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text img {
@@ -4257,7 +4265,6 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p {
-				font-family: "Bad Script", cursive, sans-serif;
 				letter-spacing: 1px;
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p:only-child {
