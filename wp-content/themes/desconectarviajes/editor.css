@@ -323,9 +323,9 @@ Blocks Styles
 				color: #74B5B0;
 				-webkit-transition: all 0.3s ease;
 				transition: all 0.3s ease;
-}
-.editor-styles-wrapper .acf-block-preview a:hover {
-				opacity: 0.7;
+				/*  &:hover {
+				  opacity: 0.7;
+				} */
 }
 .editor-styles-wrapper .acf-block-preview b,
 .editor-styles-wrapper .acf-block-preview strong,
@@ -522,6 +522,9 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .scrolled .site-logo {
 				width: 150px;
+}
+.editor-styles-wrapper .acf-block-preview .scrolled .site-logo a:hover {
+				opacity: 1;
 }
 .editor-styles-wrapper .acf-block-preview .site-menu {
 				display: -webkit-box;
@@ -3649,12 +3652,17 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text p img {
 				max-width: 60%;
 				aspect-ratio: 2;
+				-o-object-fit: cover;
+				   object-fit: cover;
 }
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text h1, .editor-styles-wrapper .acf-block-preview .text-block .banner__text h2, .editor-styles-wrapper .acf-block-preview .text-block .banner__text h3, .editor-styles-wrapper .acf-block-preview .text-block .banner__text h4, .editor-styles-wrapper .acf-block-preview .text-block .banner__text h5 {
 				font-family: "Bad Script", cursive, sans-serif;
 				font-weight: 700;
 				margin: 15px 0 30px 0;
 				text-transform: capitalize;
+}
+.editor-styles-wrapper .acf-block-preview .text-block a:hover {
+				opacity: 0.7;
 }
 .editor-styles-wrapper .acf-block-preview .buttons-block {
 				margin-top: 90px;
@@ -3817,6 +3825,9 @@ Blocks Styles
 				.editor-styles-wrapper .acf-block-preview .contact .download-file {
 								font-size: 16px;
 				}
+}
+.editor-styles-wrapper .acf-block-preview .contact a:hover {
+				opacity: 0.7;
 }
 .editor-styles-wrapper .acf-block-preview .block-slider {
 				padding: 100px 0;
@@ -4273,12 +4284,17 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p img {
 				max-width: 60%;
 				aspect-ratio: 2;
+				-o-object-fit: cover;
+				   object-fit: cover;
 }
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text h1, .editor-styles-wrapper .acf-block-preview .banner--text .banner__text h2, .editor-styles-wrapper .acf-block-preview .banner--text .banner__text h3, .editor-styles-wrapper .acf-block-preview .banner--text .banner__text h4, .editor-styles-wrapper .acf-block-preview .banner--text .banner__text h5 {
 				font-family: "Bad Script", cursive, sans-serif;
 				font-weight: 700;
 				margin: 15px 0 30px 0;
 				text-transform: capitalize;
+}
+.editor-styles-wrapper .acf-block-preview .banner--text a:hover {
+				opacity: 0.7;
 }
 .editor-styles-wrapper .acf-block-preview .banner--textimage {
 				text-align: center;
@@ -4503,6 +4519,12 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .banner--image .banner__text {
 				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__text a {
+				color: #ffffff;
+}
+.editor-styles-wrapper .acf-block-preview .banner--image .banner__text a:hover {
+				opacity: 0.7;
 }
 .editor-styles-wrapper .acf-block-preview .banner--image .banner__heading {
 				font-size: 36px;

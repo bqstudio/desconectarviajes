@@ -35,6 +35,14 @@
 
         &__text {
             color: $white;
+
+            a {
+                color: $white;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
         }
 
         &__heading {

@@ -27,6 +27,7 @@
 				img {
 					max-width: 60%;
 					aspect-ratio: 2;
+                    object-fit: cover;
 				}
 			}
 
@@ -38,4 +39,8 @@
 			}
 		}
 	}
+
+    a:hover {
+        opacity: 0.7;
+    }
 }

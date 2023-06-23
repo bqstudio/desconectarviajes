@@ -17,5 +17,9 @@
 .scrolled {
     .site-logo {
         width: 150px;
+
+        a:hover {
+            opacity: 1;
+        }
     }
 }
