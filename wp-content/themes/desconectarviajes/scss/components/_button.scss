@@ -40,6 +40,17 @@
       transition: .5s ease;
     }
 
+    &:hover {
+        background: transparent;
+        border-color: $blue-pallette;
+
+        &:after {
+          filter: none;
+        }
+    }
+    
+
+
     &--special {
       border-color: $white;
       color: $white;
