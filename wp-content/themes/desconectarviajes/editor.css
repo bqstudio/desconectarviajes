@@ -420,7 +420,7 @@ Blocks Styles
 				}
 }
 .editor-styles-wrapper .acf-block-preview .wrapper--blue {
-				background-color: #B9D6EA;
+				background-color: #4A77A0;
 }
 .editor-styles-wrapper .acf-block-preview .wrapper--white {
 				background-color: #ffffff;
@@ -3768,10 +3768,12 @@ Blocks Styles
 				max-width: 100%;
 				margin-bottom: 30px;
 				text-align: center;
+				color: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .contact__text p {
 				letter-spacing: 1px;
 				font-size: 16px;
+				color: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .contact__content {
 				display: -ms-grid;
@@ -3792,6 +3794,7 @@ Blocks Styles
 }
 .editor-styles-wrapper .acf-block-preview .contact__data p {
 				text-align: left;
+				color: #ffffff;
 }
 .editor-styles-wrapper .acf-block-preview .contact__data a {
 				text-decoration: none;
@@ -3815,7 +3818,7 @@ Blocks Styles
 				width: fit-content;
 				display: block;
 				margin: 20px 0;
-				color: #000;
+				color: #ffffff;
 				text-decoration: underline;
 }
 @media only screen and (max-width: 1050px) {
