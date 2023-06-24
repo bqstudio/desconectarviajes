@@ -3989,8 +3989,7 @@ Blocks Styles
 				content: "";
 				width: 100%;
 				height: 100%;
-				background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(0, 134, 255, 0)), to(rgb(14, 77, 142)));
-				background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 20%, rgb(14, 77, 142) 100%);
+				background-color: rgba(48, 35, 8, 0.1);
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -4009,6 +4008,9 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__item:hover img {
 				-webkit-transform: scale3d(1.05, 1.05, 1.05);
 				        transform: scale3d(1.05, 1.05, 1.05);
+}
+.editor-styles-wrapper .acf-block-preview .grid--banner .grid__item:hover::before {
+				background-color: rgba(48, 35, 8, 0);
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__title {
 				font-family: "Bad Script", cursive, sans-serif;
@@ -4422,6 +4424,7 @@ Blocks Styles
 				-webkit-box-flex: 700;
 				    -ms-flex: 700;
 				        flex: 700;
+				display: none;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .banner--textimage .banner__right {

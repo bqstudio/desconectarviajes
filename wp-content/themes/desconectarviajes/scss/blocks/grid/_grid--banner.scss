@@ -126,7 +126,8 @@
                 content: '';
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 20%, rgb(14 77 142) 100%);
+                //background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 20%, rgb(14 77 142) 100%);
+                background-color: rgba(48, 35, 8, 0.10);
                 @include absolute();
                 z-index: 2; 
             }
@@ -139,6 +140,10 @@
                 transition: all .3s ease;
                 img {
                     transform: scale3d(1.05,1.05,1.05);
+                }
+
+                &::before {
+                    background-color: rgba(48, 35, 8, 0);
                 }
             }
         }
