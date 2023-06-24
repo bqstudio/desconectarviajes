@@ -127,7 +127,7 @@
                 width: 100%;
                 height: 100%;
                 //background: linear-gradient(to bottom, rgba(0, 134, 255, 0) 20%, rgb(14 77 142) 100%);
-                background-color: rgba(48, 35, 8, 0.10);
+                background-color: rgba(0, 0, 0, 0.15);
                 @include absolute();
                 z-index: 2; 
             }
@@ -143,20 +143,17 @@
                 }
 
                 &::before {
-                    background-color: rgba(48, 35, 8, 0);
+                    background-color: rgba(48, 35, 8, 0.05);
                 }
             }
         }
 
         &__title {
-            font-family: $bad;
-            font-family: $lato;
-            font-family: $poppins;
-            font-family: $secondary-font;
             text-transform: capitalize;
             color: $white;
             z-index: 3;
             text-align: center;
+            text-shadow: 1px 1px 3px $primary-color;
             @include fade(0,100px,true,0);
 
             &::after {
