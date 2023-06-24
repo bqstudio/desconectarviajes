@@ -3643,9 +3643,6 @@ Blocks Styles
 								max-width: 100%;
 				}
 }
-.editor-styles-wrapper .acf-block-preview .text-block .banner__text p {
-				letter-spacing: 1px;
-}
 .editor-styles-wrapper .acf-block-preview .text-block .banner__text p:only-child {
 				margin-bottom: 0;
 }
@@ -3887,7 +3884,6 @@ Blocks Styles
 				        transition-delay: 0.2s;
 }
 .editor-styles-wrapper .acf-block-preview .grid--banner .grid__text p {
-				letter-spacing: 0.5px;
 				text-align: center;
 				color: #ffffff;
 }
@@ -4074,7 +4070,6 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text {
 				margin: 0 auto;
 				max-width: 100%;
-				margin-bottom: 30px;
 				opacity: var(--fade-opacity, 0);
 				-webkit-transform: var(--fade-transform, translateX(0) translateY(100px));
 				        transform: var(--fade-transform, translateX(0) translateY(100px));
@@ -4274,9 +4269,6 @@ Blocks Styles
 								max-width: 100%;
 				}
 }
-.editor-styles-wrapper .acf-block-preview .banner--text .banner__text p {
-				letter-spacing: 1px;
-}
 .editor-styles-wrapper .acf-block-preview .banner--text .banner__text p:only-child {
 				margin-bottom: 0;
 }
@@ -4339,7 +4331,6 @@ Blocks Styles
 				        transition-delay: 0.2s;
 }
 .editor-styles-wrapper .acf-block-preview .banner--textimage .banner__text p {
-				letter-spacing: 1px;
 				font-size: 16px;
 				margin-bottom: 15px;
 }
@@ -4421,7 +4412,6 @@ Blocks Styles
 				-webkit-box-flex: 700;
 				    -ms-flex: 700;
 				        flex: 700;
-				display: none;
 }
 @media only screen and (max-width: 1050px) {
 				.editor-styles-wrapper .acf-block-preview .banner--textimage .banner__right {
@@ -4460,6 +4450,10 @@ Blocks Styles
 				.editor-styles-wrapper .acf-block-preview .banner--textimage .banner__perfil {
 								max-width: 100%;
 				}
+}
+.editor-styles-wrapper .acf-block-preview .banner--textimage .banner__perfil img {
+				-webkit-filter: grayscale(100%);
+				        filter: grayscale(100%);
 }
 .editor-styles-wrapper .acf-block-preview .banner--textimage .banner__name {
 				position: absolute;

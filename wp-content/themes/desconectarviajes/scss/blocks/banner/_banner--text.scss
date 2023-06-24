@@ -13,13 +13,12 @@
 		&__text {
 			margin: 0 auto;
 			max-width: 100%;
-			margin-bottom: 30px;
+			//margin-bottom: 30px;
 			@include fade(0,100px,true,1);
 			@include text_block();
 
 			p {
 				//font-family: $bad;
-				letter-spacing: 1px;
 
 				&:only-child {
 					margin-bottom: 0;
