@@ -6,6 +6,7 @@
 
     @include responsive('mobile-h') {
         margin-right: 0;
+        width: 200px;
     }
 
     img {

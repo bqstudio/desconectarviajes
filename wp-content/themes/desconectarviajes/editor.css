@@ -514,6 +514,7 @@ Blocks Styles
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .site-logo {
 								margin-right: 0;
+								width: 200px;
 				}
 }
 .editor-styles-wrapper .acf-block-preview .site-logo img {
@@ -824,16 +825,9 @@ Blocks Styles
 .editor-styles-wrapper .acf-block-preview .woocommerce a.button--arrow:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce button.button--arrow:hover,
 .editor-styles-wrapper .acf-block-preview .woocommerce input.button--arrow:hover {
-				background: transparent;
-				border-color: #4A77A0;
-}
-.editor-styles-wrapper .acf-block-preview .button--arrow:hover:after,
-.editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--arrow:hover:after,
-.editor-styles-wrapper .acf-block-preview .woocommerce a.button--arrow:hover:after,
-.editor-styles-wrapper .acf-block-preview .woocommerce button.button--arrow:hover:after,
-.editor-styles-wrapper .acf-block-preview .woocommerce input.button--arrow:hover:after {
-				-webkit-filter: none;
-				        filter: none;
+				background: #74B5AF;
+				border-color: #74B5AF;
+				opacity: 1;
 }
 .editor-styles-wrapper .acf-block-preview .button--arrow--special,
 .editor-styles-wrapper .acf-block-preview .woocommerce #respond input#submit--arrow--special,

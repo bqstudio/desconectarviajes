@@ -41,12 +41,9 @@
     }
 
     &:hover {
-        background: transparent;
-        border-color: $blue-pallette;
-
-        &:after {
-          filter: none;
-        }
+        background: $green-pallette;
+        border-color: $green-pallette;
+        opacity: 1;
     }
     
 
