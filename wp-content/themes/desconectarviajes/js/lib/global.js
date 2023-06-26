@@ -1,13 +1,7 @@
 jQuery.noConflict();
 jQuery(document).ready(function ($) {
 
-	$('a[href^="#"]').on('click', function (e) {
-		e.preventDefault();
-		const el = $($(this).attr('href'));
-		el.length && $('html, body').animate({ scrollTop: el.offset().top - 90 }, 500);
-		$('.responsive__btn').trigger('click');
-		return false;
-	});
+
 
 	$(".js-go-top").on('click', function () {
 		$([document.documentElement, document.body]).animate({
@@ -25,8 +19,20 @@ jQuery(document).ready(function ($) {
 				$('body').toggleClass('menu-responsive-open');
 				$('.site-menu').fadeToggle();
 			});
+
+			$('.js-open-block').click(function (event) {
+				event.stopPropagation();
+				// Lógica para abrir y cerrar el menú aquí
+			});
+
+			// Agrega este código para cerrar el menú móvil al hacer clic en un enlace dentro del menú
+			$('.site-menu a').click(function () {
+				if ($('body').hasClass('menu-responsive-open')) {
+					$('body').removeClass('menu-responsive-open');
+					$('.site-menu').fadeOut();
+				}
+			});
 		} else {
-			// Eliminar los eventos y restablecer el estado original del menú
 			$('.responsive__btn').off('click');
 			$('.js-open-block').off('click');
 			$('.site-menu').fadeIn();
@@ -34,13 +40,7 @@ jQuery(document).ready(function ($) {
 		}
 	});
 
-	$('.js-open-block').click(function (event) {
-		event.stopPropagation(); // Evita la propagación del evento de clic
-		// Lógica para abrir y cerrar el menú aquí
-	});
-
-
-	// Ejecutar la verificación inicial al cargar la página
 	$(window).trigger('resize');
+
 
 });
