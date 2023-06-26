@@ -34,10 +34,10 @@
                         <a class="download-file" href="<?php echo $pdf['url']; ?>" target="_blank"><?php echo $pdf['title']; ?></a>
                     <?php endif; ?>
 
-                    <?php if (get_field('instagram','option')) { ?>
-                    <a href="<?php the_field('instagram','option') ?>" target="_blank"  title="Visit our Instagram Page">
-                        <?php get_template_part('images/socials/instagram'); ?>
-                    </a>
+                    <?php if (get_field('instagram')) { ?>
+                        <a href="<?php the_field('instagram') ?>" target="_blank"  title="Visit our Instagram Page">
+                            <?php get_template_part('images/socials/instagram'); ?>
+                        </a>
                     <?php }  ?>
                 </div>
 
