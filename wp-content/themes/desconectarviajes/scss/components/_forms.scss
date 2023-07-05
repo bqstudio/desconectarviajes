@@ -192,6 +192,12 @@ $form_gap: 30px;
 	@include responsive('mobile-h') {
 		padding: 8px;
 	}
+
+	
+}
+.gform_wrapper.gravity-theme .gfield textarea.large:focus {
+	box-shadow: none;
+    outline: none;
 }
 
 
@@ -211,7 +217,7 @@ input[type=text] {
 }
 input:focus {
 	box-shadow: none;
-    	outline: none;
+    outline: none;
 }
 
 .large{

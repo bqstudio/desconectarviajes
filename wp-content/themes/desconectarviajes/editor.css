@@ -1343,6 +1343,11 @@ Blocks Styles
 								padding: 8px;
 				}
 }
+.editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme .gfield textarea.large:focus {
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+				outline: none;
+}
 .editor-styles-wrapper .acf-block-preview .gform_validation_container,
 .editor-styles-wrapper .acf-block-preview .gform_wrapper .gform_validation_container,
 .editor-styles-wrapper .acf-block-preview body .gform_wrapper li.gform_validation_container,
