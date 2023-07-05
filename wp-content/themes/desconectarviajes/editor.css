@@ -1327,10 +1327,16 @@ Blocks Styles
 				        box-shadow: none !important;
 				padding: 0 !important;
 }
+.editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme:focus {
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+				outline: none;
+}
 .editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme .gfield textarea.large {
 				height: 150px !important;
 				font-size: 16px;
 				padding: 10px 25px;
+				color: #ffffff;
 }
 @media only screen and (max-width: 750px) {
 				.editor-styles-wrapper .acf-block-preview .gform_wrapper.gravity-theme .gfield textarea.large {
@@ -1345,6 +1351,17 @@ Blocks Styles
 				display: none;
 				position: absolute;
 				left: -9000px;
+}
+.editor-styles-wrapper .acf-block-preview input[type=text] {
+				color: #ffffff !important;
+}
+.editor-styles-wrapper .acf-block-preview input:focus {
+				-webkit-box-shadow: none;
+				        box-shadow: none;
+				outline: none;
+}
+.editor-styles-wrapper .acf-block-preview .large {
+				color: #ffffff !important;
 }
 .editor-styles-wrapper .acf-block-preview .post-cont .post-thumbnail {
 				width: 100%;
